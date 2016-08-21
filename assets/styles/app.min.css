@@ -430,6 +430,7 @@ table {
 .hero {
   padding-top: 100px;
   padding-bottom: 100px;
+  height: 100%;
   text-align: center;
 }
 .hero__title {
