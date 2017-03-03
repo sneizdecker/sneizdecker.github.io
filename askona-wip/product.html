@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie8" lang="ru" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 9 ]> <html class="ie9" lang="ru" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"> -->
+    <title></title>
+
+    <link href="css/external.css" rel="stylesheet">
+    <link href="css/internal.css" rel="stylesheet">
+
+    <!-- jquery подключаем в шапке т.к. какой-то js может быть внутри компонентов -->
+    <script src="js/jquery/jquery.min.js" type="text/javascript"></script>
+
+    <!--[if lte IE 8]>
+        <script src="js/html5shiv/html5shiv.min.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--[if lt IE 10]>
+    <div class="browse-happy">
+        <div class="container">
+            <p class="browse-happy__notice">Мы обнаружили, что вы используете <strong>устаревшую версию</strong> браузера Internet Explorer</p>
+            <p class="browse-happy__security">Из соображений безопасности этот сайт поддерживает Internet Explorer версии 10 и выше
+                <br>Кроме того, этот и многие другие сайты могут отображаться <strong>некорректно</strong></p>
+            <p class="browse-happy__update">Пожалуйста, обновите свой браузер по этой <a href="http://browsehappy.com/" target="_blank">ссылке</a></p>
+            <p class="browse-happy__recommend">(мы рекомендуем <a href="http://www.google.com/chrome" target="_blank">Google Chrome</a>)</p>
+        </div>
+    </div>
+    <![endif]-->
+
+    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-search" viewBox="0 0 18 18">
+                <path class="icon-search__path" d="M18.353,17.646 L17.646,18.353 L13.286,13.993 C11.876,15.238 10.029,16.000 8.000,16.000 C3.582,16.000 -0.000,12.418 -0.000,8.000 C-0.000,3.582 3.582,-0.000 8.000,-0.000 C12.418,-0.000 16.000,3.582 16.000,8.000 C16.000,10.029 15.238,11.876 13.993,13.286 L18.353,17.646 ZM8.000,1.000 C4.134,1.000 1.000,4.134 1.000,8.000 C1.000,11.866 4.134,15.000 8.000,15.000 C11.866,15.000 15.000,11.866 15.000,8.000 C15.000,4.134 11.866,1.000 8.000,1.000 Z"/>
+            </symbol>
+            <symbol id="icon-tip" width="15" height="15" viewBox="0 0 15 15">
+                <image id="tip" data-name="tip" width="15" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEUAAAAnl50nl50nl50nl50nl50nl50nl50nl50nl50nl50nl50nl50nl50nl50nl50nl51vur6aztFEpar////i8fLx+Pg1nqR9wcRhs7ep1diMyMvU6usAAABX62OaAAAAEHRSTlMAAlmy5fnmIswj6ctat+vqqdj5DQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAB7SURBVAjXZU9HAsMgDBMZZJFiEkJG+/931jZwig7IMpYHAJim7XrbNgaKYaSMcRA5zVQxT1y8SBS2bWdaDJzKeMQkCYdV9HlxKnCw4lO8Id78WhR5pUeor//pq2Szn0jbi1/70/4Lyq7Mv6PW8/yy31n3e+2v93ny+b4/RJILXnU2uzcAAAAASUVORK5CYII="/>
+            </symbol>
+            <symbol id="icon-cart" viewBox="0 0 25 27">
+                <path id="SvgjsPath1016" d="M1468.13 84.1165H1482.95C1484.63 84.1165 1486 82.7908 1486 81.1663V75.13810000000001C1486 75.13310000000001 1486 75.12290000000002 1486 75.1175C1486 75.1019 1486 75.0908 1486 75.07520000000001C1486 75.06370000000001 1486 75.05350000000001 1485.99 75.04320000000001C1485.99 75.03250000000001 1485.99 75.01610000000001 1485.99 75.00540000000001C1485.99 74.99480000000001 1485.98 74.98370000000001 1485.98 74.97260000000001C1485.98 74.96230000000001 1485.98 74.95210000000002 1485.97 74.93610000000001C1485.97 74.92500000000001 1485.97 74.91470000000001 1485.96 74.90320000000001C1485.96 74.89290000000001 1485.96 74.88270000000001 1485.95 74.87200000000001C1485.94 74.86090000000002 1485.94 74.85070000000002 1485.93 74.83380000000001C1485.93 74.82360000000001 1485.92 74.81250000000001 1485.92 74.808C1485.91 74.79690000000001 1485.91 74.7866 1485.9 74.77550000000001C1485.89 74.76490000000001 1485.89 74.7595 1485.88 74.7488C1485.88 74.7382 1485.8700000000001 74.7279 1485.8600000000001 74.71640000000001C1485.8600000000001 74.7061 1485.8500000000001 74.7004 1485.8400000000001 74.69050000000001C1485.8300000000002 74.67950000000002 1485.8200000000002 74.67330000000001 1485.8200000000002 74.66300000000001C1485.8100000000002 74.65200000000002 1485.8000000000002 74.6474 1485.8000000000002 74.63680000000001C1485.7900000000002 74.62650000000001 1485.7800000000002 74.62070000000001 1485.7700000000002 74.61540000000001C1485.7600000000002 74.60390000000001 1485.7600000000002 74.599 1485.7500000000002 74.5883C1485.7300000000002 74.5834 1485.7300000000002 74.5723 1485.7200000000003 74.56660000000001C1485.7100000000003 74.56200000000001 1485.7000000000003 74.551 1485.6800000000003 74.54560000000001C1485.6700000000003 74.5403 1485.6700000000003 74.53540000000001 1485.6600000000003 74.5296C1485.6500000000003 74.5247 1485.6300000000003 74.5185 1485.6200000000003 74.5078C1485.6100000000004 74.5025 1485.6000000000004 74.49680000000001 1485.5900000000004 74.4914C1485.5800000000004 74.48649999999999 1485.5700000000004 74.4816 1485.5600000000004 74.4762C1485.5500000000004 74.4701 1485.5400000000004 74.46560000000001 1485.5200000000004 74.4598C1485.5100000000004 74.4545 1485.5000000000005 74.4545 1485.4900000000005 74.4487C1485.4800000000005 74.443 1485.4600000000005 74.4381 1485.4500000000005 74.4381C1485.4400000000005 74.4381 1485.4300000000005 74.43230000000001 1485.4200000000005 74.43230000000001C1485.4100000000005 74.42780000000002 1485.4000000000005 74.42780000000002 1485.3800000000006 74.42780000000002C1485.3800000000006 74.42780000000002 1485.3700000000006 74.42250000000001 1485.3600000000006 74.42250000000001L1466.5700000000006 71.91680000000001V69.38250000000001C1466.5700000000006 69.35700000000001 1466.5700000000006 69.32990000000001 1466.5700000000006 69.30810000000001C1466.5700000000006 69.3032 1466.5700000000006 69.29870000000001 1466.5600000000006 69.28760000000001C1466.5600000000006 69.2716 1466.5500000000006 69.25600000000001 1466.5500000000006 69.23920000000001C1466.5500000000006 69.2232 1466.5500000000006 69.21330000000002 1466.5400000000006 69.19650000000001C1466.5400000000006 69.18580000000001 1466.5400000000006 69.18010000000001 1466.5400000000006 69.16940000000001C1466.5300000000007 69.1538 1466.5300000000007 69.13820000000001 1466.5200000000007 69.1222C1466.5200000000007 69.11680000000001 1466.5200000000007 69.10570000000001 1466.5200000000007 69.10040000000001C1466.5100000000007 69.0848 1466.5100000000007 69.0737 1466.4900000000007 69.05770000000001C1466.4900000000007 69.0528 1466.4900000000007 69.04250000000002 1466.4800000000007 69.03590000000001C1466.4800000000007 69.02570000000001 1466.4700000000007 69.01500000000001 1466.4600000000007 69.00470000000001C1466.4600000000007 68.99370000000002 1466.4500000000007 68.98830000000001 1466.4400000000007 68.97680000000001C1466.4400000000007 68.96660000000001 1466.4300000000007 68.96160000000002 1466.4300000000007 68.95060000000001C1466.4200000000008 68.94030000000001 1466.4100000000008 68.92920000000001 1466.4100000000008 68.9193C1466.4000000000008 68.9128 1466.3900000000008 68.90740000000001 1466.3900000000008 68.9021C1466.3800000000008 68.8923 1466.3700000000008 68.882 1466.3600000000008 68.87010000000001C1466.3500000000008 68.86470000000001 1466.3400000000008 68.8598 1466.3400000000008 68.8541C1466.3300000000008 68.8438 1466.3200000000008 68.8327 1466.3000000000009 68.822C1466.3000000000009 68.8163 1466.2800000000009 68.8122 1466.2800000000009 68.8069C1466.270000000001 68.7958 1466.260000000001 68.7904 1466.250000000001 68.77929999999999C1466.230000000001 68.7695 1466.210000000001 68.7584 1466.200000000001 68.75269999999999C1466.200000000001 68.7477 1466.190000000001 68.7477 1466.180000000001 68.74239999999999C1466.160000000001 68.73169999999999 1466.130000000001 68.72189999999999 1466.110000000001 68.71L1462.040000000001 67.0542C1461.660000000001 66.89819999999999 1461.2200000000012 67.0702 1461.060000000001 67.43849999999999C1460.900000000001 67.80709999999999 1461.080000000001 68.22959999999999 1461.4600000000012 68.38399999999999L1465.070000000001 69.85909999999998V85.66599999999998C1465.070000000001 87.16159999999998 1466.2300000000012 88.40189999999998 1467.7300000000012 88.58829999999998C1467.4600000000012 89.02679999999998 1467.300000000001 89.53999999999998 1467.300000000001 90.08519999999997C1467.300000000001 91.69379999999997 1468.660000000001 92.99809999999997 1470.310000000001 92.99809999999997C1471.9700000000012 92.99809999999997 1473.330000000001 91.68879999999997 1473.330000000001 90.08519999999997C1473.330000000001 89.55059999999997 1473.180000000001 89.04359999999997 1472.910000000001 88.61539999999997H1479.630000000001C1479.360000000001 89.04849999999996 1479.210000000001 89.55059999999996 1479.210000000001 90.08519999999997C1479.210000000001 91.69379999999997 1480.5600000000009 92.99809999999997 1482.220000000001 92.99809999999997C1483.880000000001 92.99809999999997 1485.240000000001 91.68879999999997 1485.240000000001 90.08519999999997C1485.240000000001 88.48239999999997 1483.880000000001 87.17229999999998 1482.220000000001 87.17229999999998H1468.130000000001C1467.2600000000011 87.17229999999998 1466.570000000001 86.49409999999997 1466.570000000001 85.66599999999998V83.71009999999998C1467.0200000000011 83.96629999999999 1467.560000000001 84.11649999999999 1468.130000000001 84.11649999999999ZM1471.84 90.0799C1471.84 90.89189999999999 1471.1499999999999 91.5492 1470.32 91.5492C1469.49 91.5492 1468.8 90.8866 1468.8 90.0799C1468.8 89.2727 1469.49 88.60969999999999 1470.32 88.60969999999999C1471.1499999999999 88.60969999999999 1471.84 89.2674 1471.84 90.0799ZM1483.75 90.0799C1483.75 90.89189999999999 1483.06 91.5492 1482.23 91.5492C1481.39 91.5492 1480.71 90.8866 1480.71 90.0799C1480.71 89.2727 1481.39 88.60969999999999 1482.23 88.60969999999999C1483.06 88.60969999999999 1483.75 89.2674 1483.75 90.0799ZM1482.95 82.673H1468.13C1467.2600000000002 82.673 1466.5700000000002 81.9948 1466.5700000000002 81.1663V73.36980000000001L1484.5100000000002 75.75880000000001V81.16090000000001C1484.5100000000002 82.00010000000002 1483.8000000000002 82.67300000000002 1482.9500000000003 82.67300000000002Z " fill="#fff" fill-opacity="1" transform="matrix(1,0,0,1,-1461,-66)"></path>
+            </symbol>
+        </defs>
+    </svg>
+
+
+    <div class="wrap-main">
+        <header class="header-main">
+            <div class="top-menu">
+                <div class="top-menu__inner container">
+                    <ul class="top-menu__list">
+                        <li class="top-menu__item">
+                            <a href="javascript:void(0)" class="top-menu__link top-menu__link_enpedia">Энциклопедия сна</a>
+                        </li>
+                        <li class="top-menu__item">
+                            <a href="javascript:void(0)" class="top-menu__link">Доставка и оплата</a>
+                        </li>
+                        <li class="top-menu__item">
+                            <a href="javascript:void(0)" class="top-menu__link">Гарантии</a>
+                        </li>
+                        <li class="top-menu__item">
+                            <a href="javascript:void(0)" class="top-menu__link top-menu__link_services">Сервисы</a>
+                            <div class="header-drop top-menu__header-drop">
+                            <!-- <div class="header-drop header-drop_show top-menu__header-drop"> -->
+                                <ul class="header-drop__list">
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Обмен и возврат
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Рассрочка и кредит
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Сроки изготовления
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Замер спального места
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Сборка мебели
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Дополнительные услгуи
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="top-menu__item">
+                            <a href="javascript:void(0)" class="top-menu__link">Бонусная программа</a>
+                        </li>
+                    </ul>
+
+                    <ul class="top-menu__list top-menu__list_right">
+                        <li class="top-menu__item">
+                            <a href="javascript:void(0)" class="top-menu__link">О компании</a>
+                        </li>
+                        <li class="top-menu__item">
+                            <a href="javascript:void(0)" class="top-menu__link">Партнёрам</a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- /top-menu -->
+            <div class="main-panel">
+                <div class="main-panel__inner container">
+                    <div class="main-panel__left">
+                        <a href="javascript:void(0)" class="logo main-panel__logo">
+                            <img src="img/logo.png" alt="" class="logo__img">
+                        </a>
+                        <div class="location main-panel__location">
+                            <div class="location__item location__item_left">
+                                <a href="javascript:void(0)" class="location__link">Москва</a>
+                                <!-- <div class="header-drop header-drop_city location__header-drop"> -->
+                                <div class="header-drop header-drop_show header-drop_city location__header-drop">
+                                    <div class="header-drop__close"></div>
+                                    <div class="header-drop__content">
+                                        <div class="header-drop__question">Ваш город Москва?</div>
+                                        <div class="header-drop__buttons">
+                                            <button class="btn">Да</button>
+                                            <button class="btn btn_lite">Нет, выбрать другой</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="location__item">
+                                <a  href="javascript:void(0)" class="location__link location__link_shops">Магазины</a>
+                                <div class="location__count">62</div>
+                            </div>
+                        </div>
+                    </div><!-- /main-panel__left -->
+                    <div class="main-panel__right">
+                        <a href="javascript:void(0)" class="callback-btn main-panel__callback-btn">Перезвоните<br>мне</a>
+                        <div class="phone main-panel__phone">
+                            <div class="phone__number">8 800 200-40-90</div>
+                            <div class="phone__description">Бесплатно и круглосуточно</div>
+                        </div>
+                        <div class="main-panel__login">
+                            <a href="javascript:void(0)" class="main-panel__enter">Войти</a>
+                            <!-- <a href="javascript:void(0)" class="main-panel__enter main-panel__enter_hide">Войти</a> -->
+                            <a href="javascript:void(0)" class="main-panel__cabinet">Личный кабинет</a>
+                            <!-- <a href="javascript:void(0)" class="main-panel__cabinet main-panel__cabinet_show">Личный кабинет</a> -->
+                            <div class="header-drop main-panel__header-drop">
+                                <ul class="header-drop__list">
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Персональные данные
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Отложенные товары <span class="header-drop__count">13</span>
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Корзина <span class="header-drop__count">2</span>
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Список сравнения <span class="header-drop__count">8</span>
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Заказы
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Карта выгодных покупок
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Купоны
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Обратная связь
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Выйти
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="customer-panel main-panel__customer-panel">
+                            <div class="customer-panel__items">
+                                <a href="javascript:void(0)" class="customer-panel__item customer-panel__item_compare">
+                                    <span class="customer-panel__count">8</span>
+                                </a>
+                                <a href="javascript:void(0)" class="customer-panel__item customer-panel__item_wish">
+                                    <span class="customer-panel__count">13</span>
+                                </a>
+                                <a href="javascript:void(0)" class="customer-panel__item customer-panel__item_cart">
+                                    <span class="customer-panel__count">2</span>
+                                </a>
+                            </div>
+                            <div class="cart-view">
+                                <div class="cart-view__close"></div>
+                                <div class="cart-view__top">
+                                    <h4 class="cart-view__top-title">Корзина <span class="cart-view__top-amount">2</span></h4>
+                                </div>
+                                <div class="cart-view__main">
+                                    <div class="cart-view__item">
+                                        <div class="cart-view__item-del"></div>
+                                        <img class="cart-view__item-img" src="img/cart-view-sample.jpg" alt="">
+                                        <div class="cart-view__item-info">
+                                            <div class="cart-view__item-label">Матрас</div>
+                                            <div class="cart-view__item-title">Askona Quadra</div>
+                                            <div class="cart-view__item-specs">
+                                                <span class="cart-view__item-color"></span>
+                                                Мягкий, до 140 кг, 21 см
+                                            </div>
+                                            <div class="cart-view__item-size">
+                                                180 x 200 см
+                                            </div>
+                                            <div class="cart-view__item-price">
+                                                <span class="cart-view__item-price-txt">17 710</span> <span class="rub rub_small">f</span>
+                                                <div class="pm-counter cart-view__pm-counter">
+                                                    <button class="pm-counter__btn pm-counter__btn_min"></button>
+                                                    <span class="pm-counter__count">1</span>
+                                                    <button class="pm-counter__btn pm-counter__btn_plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /cart-view__item -->
+                                    <div class="cart-view__item">
+                                        <div class="cart-view__item-del"></div>
+                                        <img class="cart-view__item-img" src="img/cart-view-sample.jpg" alt="">
+                                        <div class="cart-view__item-info">
+                                            <div class="cart-view__item-label">Матрас</div>
+                                            <div class="cart-view__item-title">Askona Innovate</div>
+                                            <div class="cart-view__item-specs">
+                                                <span class="cart-view__item-color"></span>
+                                                Мягкий, до 140 кг, 21 см
+                                            </div>
+                                            <div class="cart-view__item-size">
+                                                180 x 200 см
+                                            </div>
+                                            <div class="cart-view__item-price">
+                                                <span class="cart-view__item-price-txt">22 384</span> <span class="rub cart-view__rub">f</span>
+                                                <div class="pm-counter cart-view__pm-counter">
+                                                    <button class="pm-counter__btn pm-counter__btn_min"></button>
+                                                    <span class="pm-counter__count">1</span>
+                                                    <button class="pm-counter__btn pm-counter__btn_plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- /cart-view__item -->
+                                </div>
+                                <div class="cart-view__bot">
+                                    <div class="cart-view__bot-left">
+                                        <div class="cart-view__bot-title">
+                                            Итого:
+                                        </div>
+                                        <div class="cart-view__bot-info">
+                                            Без учёта доставки
+                                        </div>
+                                    </div>
+                                    <div class="cart-view__bot-right">
+                                        <div class="cart-view__price">
+                                            <span class="cart-view__price-txt">40 104</span> <span class="rub rub_normal">f</span>
+                                        </div>
+                                        <div class="payment cart-view__payment">
+                                            <span class="payment__item payment__item_master"></span>
+                                            <span class="payment__item payment__item_visa"></span>
+                                            <span class="payment__item payment__item_paypal"></span>
+                                        </div>
+                                    </div>
+                                    <button class="btn cart-view__btn">Оформить заказ</button>
+                                </div>
+                            </div>
+                            <!-- /cart-view -->
+                        </div>
+                        <div class="main-panel__hamburger">
+                        <!-- <div class="main-panel__hamburger main-panel__hamburger_active"> -->
+                            <span class="main-panel__hamburger-inner"></span>
+                        </div>
+                    </div><!-- /main-panel__right -->
+                </div><!-- /main-panel__inner -->
+            </div><!-- /main-panel -->
+            <div class="main-menu">
+            <!-- <div class="main-menu main-menu_hide"> -->
+                <div class="main-menu__inner container">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a href="javascript:void(0)" class="main-menu__link">Матрасы</a>
+                            <div class="main-menu__drop">
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/mattress-1.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Пружинные</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/mattress-2.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Беспружинные</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/mattress-3.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Детские матрасы</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/mattress-4.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Наматрасники</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/mattress-5.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Защитные чехлы</span>
+                                </a>
+                            </div><!-- /main-menu__drop -->
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="javascript:void(0)" class="main-menu__link">Кровати</a>
+                            <div class="main-menu__drop">
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/bed-1.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Кровати</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/bed-2.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Спальные гарнитуры</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/bed-3.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Изголовья</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/bed-4.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Основания</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/bed-5.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Кровати-трансформеры</span>
+                                </a>
+                            </div><!-- /main-menu__drop -->
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="javascript:void(0)" class="main-menu__link">Диваны</a>
+                            <div class="main-menu__drop">
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/sofa-1.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Прямые диваны</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/sofa-2.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Угловые диваны</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/sofa-3.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Аксессуары к диванам</span>
+                                </a>
+                            </div><!-- /main-menu__drop -->
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="javascript:void(0)" class="main-menu__link">Подушки и одеяла</a>
+                            <div class="main-menu__drop">
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/pillow-1.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Подушки</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/pillow-2.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Одеяла</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/pillow-3.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Защитные чехлы для подушек</span>
+                                </a>
+                            </div><!-- /main-menu__drop -->
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="javascript:void(0)" class="main-menu__link">Шкафы и комоды</a>
+                            <div class="main-menu__drop">
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/cupboard-1.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Распашные шкафы</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/cupboard-2.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Шкафы-купе</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/cupboard-3.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Комоды</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/cupboard-4.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Угловые секции</span>
+                                </a>
+                            </div><!-- /main-menu__drop -->
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="javascript:void()" class="main-menu__link">Малая мебель</a>
+                            <div class="main-menu__drop">
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/furniture-1.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Тумбы</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/furniture-2.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Банкетки</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/furniture-3.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Пуфы</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/furniture-4.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Туалетные столики</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/furniture-5.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Вешалки</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/furniture-6.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Зеркала</span>
+                                </a>
+                            </div><!-- /main-menu__drop -->
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="javascript:void(0)" class="main-menu__link">Асессуары</a>
+                            <div class="main-menu__drop">
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/accessories-1.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Постельное бельё</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/accessories-2.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Светильники</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/accessories-3.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Аромадиффузеры</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/accessories-4.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Массажёры</span>
+                                </a>
+                            </div><!-- /main-menu__drop -->
+                        </li>
+                        <li class="main-menu__item main-menu__item_sale">
+                            <a href="javascript:void(0)" class="main-menu__link main-menu__link_sale">Акции</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="search-btn main-menu__search-btn"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- /main-menu -->
+            <div class="mob-menu">
+                <div class="mob-menu__top">
+                    <div class="phone mob-menu__phone">
+                        <div class="phone__number">8 800 200-40-90</div>
+                        <div class="phone__description">Бесплатно и круглосуточно</div>
+                    </div>
+                    <a href="javascript:void(0)" class="callback-btn mob-menu__callback-btn">Перезвоните мне</a>
+                </div><!-- /mob-menu__top -->
+                <div class="mob-menu__search">
+                    <div class="mini-form mob-menu__mini-form">
+                      <form action="" method="POST" class="mini-form__form">
+                        <input placeholder="Поиск по сайту" type="text" class="mini-form__field">
+                        <button class="mini-form__btn mini-form__btn_search mini-form__btn_mob-search"></button>
+                      </form>
+                    </div>
+                </div><!-- /mob-menu__search -->
+                <div class="mob-accordion">
+                    <div class="mob-accordion__item">
+                        <!-- <a href="javascript:void(0)" class="mob-accordion__title">Матрасы</a> -->
+                        <a href="javascript:void(0)" class="mob-accordion__title mob-accordion__title_active">Матрасы</a>
+                        <div class="mob-accordion__content">
+                            <ul class="mob-accordion__list">
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Пружинные</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Беспружинные</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Детские матрасы</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Наматрасники</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Защитные чехлы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /mob-accordion__item -->
+                    <div class="mob-accordion__item">
+                        <a href="javascript:void(0)" class="mob-accordion__title">Кровати</a>
+                        <!-- <a href="javascript:void(0)" class="mob-accordion__title mob-accordion__title_active">Матрасы</a> -->
+                        <div class="mob-accordion__content">
+                            <ul class="mob-accordion__list">
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Кровати</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Спальные гарнитуры</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Изголовья</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Основания</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Кровати-трансформеры</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /mob-accordion__item -->
+                    <div class="mob-accordion__item">
+                        <a href="javascript:void(0)" class="mob-accordion__title">Диваны</a>
+                        <!-- <a href="javascript:void(0)" class="mob-accordion__title mob-accordion__title_active">Матрасы</a> -->
+                        <div class="mob-accordion__content">
+                            <ul class="mob-accordion__list">
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Прямые диваны</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Угловые диваны</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Аксессуары к диванам</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /mob-accordion__item -->
+                    <div class="mob-accordion__item">
+                        <a href="javascript:void(0)" class="mob-accordion__title">Подушки и одеяла</a>
+                        <!-- <a href="javascript:void(0)" class="mob-accordion__title mob-accordion__title_active">Матрасы</a> -->
+                        <div class="mob-accordion__content">
+                            <ul class="mob-accordion__list">
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Подушки</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Одеяла</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Защитные чехлы для подушек</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /mob-accordion__item -->
+                    <div class="mob-accordion__item">
+                        <a href="javascript:void(0)" class="mob-accordion__title">Шкафы и комоды</a>
+                        <!-- <a href="javascript:void(0)" class="mob-accordion__title mob-accordion__title_active">Матрасы</a> -->
+                        <div class="mob-accordion__content">
+                            <ul class="mob-accordion__list">
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Распашные шкафы</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Шкафы-купе</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Комоды</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Угловые секции</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /mob-accordion__item -->
+                    <div class="mob-accordion__item">
+                        <a href="javascript:void(0)" class="mob-accordion__title">Малая мебель</a>
+                        <!-- <a href="javascript:void(0)" class="mob-accordion__title mob-accordion__title_active">Матрасы</a> -->
+                        <div class="mob-accordion__content">
+                            <ul class="mob-accordion__list">
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Тумбы</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Банкетки</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Пуфы</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Туалетные столики</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Вешкалки</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Зеркала</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /mob-accordion__item -->
+                    <div class="mob-accordion__item">
+                        <a href="javascript:void(0)" class="mob-accordion__title">Аксессуары</a>
+                        <!-- <a href="javascript:void(0)" class="mob-accordion__title mob-accordion__title_active">Аксессуары</a> -->
+                        <div class="mob-accordion__content">
+                            <ul class="mob-accordion__list">
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Постельное бельё</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Светильники</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Аромадиффузеры</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Массажёры</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /mob-accordion__item -->
+                    <div class="mob-accordion__item">
+                        <a href="javascript:void(0)" class="mob-accordion__title">Акции <span class="mob-accordion__sale-ico"></span></a>
+                    </div><!-- /mob-accordion__item -->
+                </div><!-- /mob-accordeon -->
+                <div class="mob-panel">
+                    <div class="mob-panel__login">
+                        <a href="javascript:void(0)" class="mob-panel__login-link">Войти в личный кабинет</a>
+                    </div>
+                    <ul class="mob-panel__list">
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link">Доставка и оплата</a>
+                        </li>
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link">Гарантия</a>
+                        </li>
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link">Энциклопедия</a>
+                        </li>
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link">Бонусная программа</a>
+                        </li>
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link">О компании</a>
+                        </li>
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link">Партнёрам</a>
+                        </li>
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link">Контакты</a>
+                        </li>
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link mob-panel__link_services">Сервисы</a>
+                            <div class="header-drop mob-panel__header-drop">
+                              <ul class="header-drop__list">
+                                <li class="header-drop__item">
+                                  <a href="javascript:void(0)" class="header-drop__link">
+                                    Обмен и возврат
+                                  </a>
+                                </li>
+                                <li class="header-drop__item">
+                                  <a href="javascript:void(0)" class="header-drop__link">
+                                    Рассрочка и кредит
+                                  </a>
+                                </li>
+                                <li class="header-drop__item">
+                                  <a href="javascript:void(0)" class="header-drop__link">
+                                    Сроки изготовления
+                                  </a>
+                                </li>
+                                <li class="header-drop__item">
+                                  <a href="javascript:void(0)" class="header-drop__link">
+                                    Замер спального места
+                                  </a>
+                                </li>
+                                <li class="header-drop__item">
+                                  <a href="javascript:void(0)" class="header-drop__link">
+                                    Сборка мебели
+                                  </a>
+                                </li>
+                                <li class="header-drop__item">
+                                  <a href="javascript:void(0)" class="header-drop__link">
+                                    Дополнительные услгуи
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- /mob-panel -->
+            </div><!-- /mob-menu -->
+            <div class="search header-main__search">
+            <!-- <div class="search header-main__search search_show"> -->
+                <div class="search__form container">
+                    <form action="">
+                        <div class="search__choice">
+                            <a href="javascript:void(0)" class="search__choice-drop">Везде</a>
+                            <div class="header-drop header-drop_cat search__header-drop">
+                                <ul class="header-drop__list">
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Везде
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            В каталоге
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            В акциях
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            В новостях
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            В статьях
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="search__field">
+                            <input class="search__field-text" type="text" placeholder="Поиск товаров, например: мягкий матрас или угловой диван">
+                        </div>
+                        <button class="search-btn search-btn_close search__search-btn"></button>
+                        <button class="search-btn search__search-btn"></button>
+                    </form>
+                </div><!-- /search__form -->
+                <div class="search__results">
+                    <div class="search__results-inner container">
+                        <div class="search__results-found">
+                            <div class="search__results-cat">
+                                <div class="search__results-cat-name">
+                                    Модели
+                                </div>
+                                <div class="search__results-cat-items">
+                                    <a href="javascript:void(0)" class="search__results-cat-item">
+                                        Askona Balance Forma
+                                    </a>
+                                    <a href="javascript:void(0)" class="search__results-cat-item">
+                                        Askona Balance Smart
+                                    </a>
+                                </div>
+                            </div><!-- /search__results-cat -->
+                            <div class="search__results-cat">
+                                <div class="search__results-cat-name">
+                                    Категории
+                                </div>
+                                <div class="search__results-cat-items">
+                                    <a href="javascript:void(0)" class="search__results-cat-item">
+                                        Матрасы
+                                    </a>
+                                    <a href="javascript:void(0)" class="search__results-cat-item">
+                                        Беспружинные матрасы
+                                    </a>
+                                </div>
+                            </div><!-- /search__results-cat -->
+                            <div class="search__results-cat">
+                                <div class="search__results-cat-name">
+                                    Популярное
+                                </div>
+                                <div class="search__results-cat-items">
+                                    <a href="javascript:void(0)" class="search__results-cat-item">
+                                        Матрасы Аскона
+                                    </a>
+                                    <a href="javascript:void(0)" class="search__results-cat-item">
+                                        Наматрасники
+                                    </a>
+                                </div>
+                            </div><!-- /search__results-cat -->
+                            <div class="search__results-cat">
+                                <div class="search__results-cat-name">
+                                    Статьи
+                                </div>
+                                <div class="search__results-cat-items">
+                                    <a href="javascript:void(0)" class="search__results-cat-item">
+                                        Как выбрать матрас
+                                    </a>
+                                </div>
+                            </div><!-- /search__results-cat -->
+                        </div>
+                        <div class="search__results-often">
+                            <div class="search__results-often-search">
+                                Часто ищут
+                            </div>
+                            <div class="search__results-often-item">
+                                <img src="img/search/search-1.png" class="search__results-often-img" alt="">
+                                <div class="search__results-often-label">Матрас</div>
+                                <a href="javascript:void(0)" class="search__results-often-title">Askona Innovate</a>
+                            </div>
+                            <div class="search__results-often-item">
+                                <img src="img/search/search-2.png" class="search__results-often-img" alt="">
+                                <div class="search__results-often-label">Матрас</div>
+                                <a href="javascript:void(0)" class="search__results-often-title">Askona Innovate</a>
+                            </div>
+                            <div class="search__results-often-item">
+                                <img src="img/search/search-3.png" class="search__results-often-img" alt="">
+                                <div class="search__results-often-label">Матрас</div>
+                                <a href="javascript:void(0)" class="search__results-often-title">Askona Innovate</a>
+                            </div>
+                        </div><!-- /search__results-often -->
+                    </div>
+                </div>
+            </div> <!-- /search -->
+        </header>
+
+        <section class="product-head">
+            <div class="product-head__wrapper">
+                <ul class="product-head__breadcrumbs">
+                    <li class="product-head__breadcrumbs-item">
+                        <a class="product-head__breadcrumbs-link" href="#">Матрасы</a>
+                    </li>
+                    <!-- /.product-head__breadcrumbs-item -->
+                    <li class="product-head__breadcrumbs-item">
+                        <a class="product-head__breadcrumbs-link" href="#">Разносторонний матрас Askona Fortuna</a>
+                    </li>
+                    <!-- /.product-head__breadcrumbs-item -->
+                </ul>
+                <!-- /.product_breadcrumbs -->
+                <h5 class="product-head__sub-title">Разносторонний матрас</h5>
+                <!-- /.product-head__sub-title -->
+                <h1 class="product-head__title">Askona Fortuna</h1>
+                <!-- /.product-head__title -->
+                <ul class="product-head__rating">
+                    <li class="product-head__rating-item"></li>
+                    <!-- /.product-head__rating-item -->
+                    <li class="product-head__rating-item"></li>
+                    <!-- /.product-head__rating-item -->
+                    <li class="product-head__rating-item"></li>
+                    <!-- /.product-head__rating-item -->
+                    <li class="product-head__rating-item product-head__rating-item_half"></li>
+                    <!-- /.product-head__rating-item -->
+                    <li class="product-head__rating-item product-head__rating-item_empty"></li>
+                    <!-- /.product-head__rating-item -->
+                </ul>
+                <!-- /.product-head__rating -->
+                <div class="product-head__reviews js-reviews-btn">
+                    <p class="product-head__reviews-text">24 отзыва</p>
+                    <!-- /.product-head__reviews-text -->
+                    <div class="product-head__review-popup product-head__review-popup_hidden js-popup-review">
+                        <ul class="product-head__review-rating">
+                            <li class="product-head__review-rating-item"></li>
+                            <!-- /.product-head__review-rating-item -->
+                            <li class="product-head__review-rating-item"></li>
+                            <!-- /.product-head__review-rating-item -->
+                            <li class="product-head__review-rating-item"></li>
+                            <!-- /.product-head__review-rating-item -->
+                            <li class="product-head__review-rating-item"></li>
+                            <!-- /.product-head__review-rating-item -->
+                            <li class="product-head__review-rating-item"></li>
+                            <!-- /.product-head__review-rating-item -->
+                        </ul>
+                        <!-- /.product-head__review-rating -->
+                        <p class="product-head__review-title">Анастасия</p>
+                        <!-- /.product-head__review-title -->
+
+                        <p class="product-head__review-content">Пользуемся уже несколько месяцев. Всё очень удобно, спать на нём действительно одно удовольствие. Пользуемся уже несколько месяцев. Всё очень удобно, спать на нём действительно одно удовольствие.</p>
+                        <!-- /.product-head__review-content -->
+                        <a class="product-head__reviews-link" href="#reviews">Все отзывы</a>
+                        <!-- /.product-head__reviews-link -->
+                        <button class="product-head__review-close js-review-popup-close"></button>
+                    </div>
+                    <!-- /.product-head__review-popup -->
+                </div>
+                <!-- /.product-head__reviews -->
+            </div>
+            <!-- /.product-head__wrapper -->
+        </section>
+        <!-- /.product-head -->
+        <section class="product-preview">
+            <div class="product-preview__wrapper">
+                <div class="product-preview__stickers-container">
+                    <div class="product-preview__sticker product-preview__sticker_percent">
+                        <p class="product-preview__sticker-text">-50%</p>
+                        <!-- /.product-preview__sticker-text -->
+                    </div>
+                    <!-- /.product-preview__sticker -->
+                    <div class="product-preview__sticker product-preview__sticker_bonus">
+                        <p class="product-preview__sticker-text">+200 <span class="product-preview__sticker-text_small">бонусов</span></p>
+                        <!-- /.product-preview__sticker-text -->
+                    </div>
+                    <!-- /.product-preview__sticker -->
+                    <div class="product-preview__sticker product-preview__sticker_weekly">
+                        <p class="product-preview__sticker-text">Товар недели</p>
+                        <!-- /.product-preview__sticker-text -->
+                    </div>
+                    <!-- /.product-preview__sticker -->
+                </div>
+                <!-- /.product-preview__stickers-container -->
+                <div class="product-preview__main-image-container">
+                    <img class="product-preview__main-image js-product-main-image js-image-preview-open" src="img/matress/matress.png" alt="product">
+                </div>
+                <!-- /.product-preview__main-image-container -->
+                <div class="product-preview__image-feed">
+                    <div class="product-preview__image-container js-pre-icon-container">
+                        <img class="product-preview__img product-preview__img_active" src="img/matress/icon1.png" alt="img" data-path="img/matress/matress.png">
+                        <img class="product-preview__img" src="img/matress/icon2.png" alt="img" data-path="img/matress/matress1.png">
+                        <img class="product-preview__img" src="img/matress/icon3.png" alt="img" data-path="img/matress/matress3.png">
+                        <img class="product-preview__img" src="img/matress/icon4.png" alt="img" data-path="img/matress/matress4.png">
+                        <img class="product-preview__img" src="img/matress/icon5.png" alt="img" data-path="img/matress/matress5.png">
+                        <img class="product-preview__img" src="img/matress/icon6.png" alt="img" data-path="img/matress/matress6.png">
+                        <a class="product-preview__video" href="#product-video">
+                            <img class="product-preview__video-icon" src="img/matress/play.png" alt="icon">
+                            <p class="product-preview__video-text">видео</p>
+                        </a>
+                        <!-- /.product-preview__video -->
+                        <!-- <div class="product-preview__more js-image-preview-open">
+                            <p class="product-preview__more-text">Ещё 12</p>
+                            <p class="product-preview__more-text">фото</p>
+                        </div> -->
+                        <!-- /.product-preview__more -->
+                    </div>
+                    <!-- /.product-preview__image-container -->
+                    <button class="product-preview__share">
+                        Поделиться
+                        <div class="product-preview__share-popup">
+                            <ul class="product-preview__share-list">
+                                <li class="product-preview__share-item product-preview__share-item_fb">16</li>
+                                <!-- /.product-preview__share-item -->
+                                <li class="product-preview__share-item product-preview__share-item_vk">32</li>
+                                <!-- /.product-preview__share-item -->
+                                <li class="product-preview__share-item product-preview__share-item_ok">8</li>
+                                <!-- /.product-preview__share-item -->
+                                <li class="product-preview__share-item product-preview__share-item_tw">3</li>
+                                <!-- /.product-preview__share-item -->
+                            </ul>
+                            <!-- /.product-preview__share-list -->
+                        </div>
+                        <!-- /.product-preview__share-popup -->
+                    </button>
+                    <!-- /.product-preview__share -->
+                </div>
+                <!-- /.product-preview__image-feed -->
+                <div class="product-preview__popup-image-full product-preview__popup-image-full_hidden js-image-preview">
+
+                    <div class="product-preview__left-bar-container">
+                
+                        <div class="product-preview__slider-thumb-prev">
+                            <img src="img/svg/arrow-up.svg">
+                        </div>
+
+                        <div class="swiper-wrapper product-preview__slider-thumb-container">
+                            <!-- Slides -->
+                            <div class="swiper-slide product-preview__slider-thumb">
+                                <img src="img/matress/icon1.png" alt="" class="product-preview__slider-icon">
+                            </div>
+                            <div class="swiper-slide product-preview__slider-thumb">
+                                <img src="img/matress/icon2.png" alt="" class="product-preview__slider-icon">
+                            </div>
+                            <div class="swiper-slide product-preview__slider-thumb">
+                                <img src="img/matress/icon3.png" alt="" class="product-preview__slider-icon">
+                            </div>
+                            <div class="swiper-slide product-preview__slider-thumb">
+                                <img src="img/matress/icon4.png" alt="" class="product-preview__slider-icon">
+                            </div>
+                            <div class="swiper-slide product-preview__slider-thumb">
+                                <img src="img/matress/icon5.png" alt="" class="product-preview__slider-icon">
+                            </div>
+                            <div class="swiper-slide product-preview__slider-thumb">
+                                <img src="img/matress/icon6.png" alt="" class="product-preview__slider-icon">
+                            </div>
+                        </div>
+
+                        <div class="product-preview__slider-thumb-next">
+                            <img src="img/svg/arrow-bottom.svg">
+                        </div>
+
+                    </div>
+                    <!-- /.product-preview__left-bar-container -->
+            
+                    <div class="product-preview__big-slider-container">
+
+                        <div class="product-preview__slider-big-prev">
+                            <img src="img/svg/arrow_left.svg">
+                        </div>
+
+                        <div class="swiper-wrapper product-preview__slider-big-wrapper">
+                            <div class="swiper-slide product-preview__slider-big">
+                                <img src="img/matress/matress.png" alt="" class="product-preview__slider-big-img">
+                            </div>
+                            <div class="swiper-slide product-preview__slider-big">
+                                <img src="img/matress/matress1.png" alt="" class="product-preview__slider-big-img">
+                            </div>
+                            <div class="swiper-slide product-preview__slider-big">
+                                <img src="img/matress/matress3.png" alt="" class="product-preview__slider-big-img">
+                            </div>
+                            <div class="swiper-slide product-preview__slider-big">
+                                <img src="img/matress/matress4.png" alt="" class="product-preview__slider-big-img">
+                            </div>
+                            <div class="swiper-slide product-preview__slider-big">
+                                <img src="img/matress/matress5.png" alt="" class="product-preview__slider-big-img">
+                            </div>
+                            <div class="swiper-slide product-preview__slider-big">
+                                <img src="img/matress/matress6.png" alt="" class="product-preview__slider-big-img">
+                            </div>
+                        </div>
+
+                        <div class="product-preview__slider-big-next">
+                            <img src="img/svg/arrow_right.svg">
+                        </div>
+
+                    </div>
+                    <!-- /.product-preview__big-slider-container -->
+
+                        <div class="product-preview__slider-close js-image-preview-close">
+                            <img src="img/svg/close-big.svg">
+                        </div>
+
+                </div>
+                <!-- /.product-preview__popup-image-full -->
+            </div>
+            <!-- /.product-preview__wrapper -->
+        </section>
+        <!-- /.product-preview -->
+        <section class="product-buy product-buy__style">
+            <div class="product-buy__container">
+                <form action="">
+                    <label class="product-buy__drop-size-label" for="product-buy__drop-size">Размер</label>
+                    <select class="product-buy__drop-size" name="size" data-search="true">
+                        <option value="1">Заказать нестандартный размер</option>
+                        <option value="2">80 x 190 см</option>
+                        <option value="3">80 x 200 см</option>
+                        <option value="4">90 x 190 см</option>
+                        <option value="5">90 x 200 см</option>
+                        <option value="6">160 x 190 см</option>
+                        <option value="7">120 x 200 см</option>
+                        <option value="8">140 x 190 см</option>
+                        <option value="9" selected>180 x 200 см</option>
+                    </select>
+                    <div class="product-buy__tabs-container js-tabs">
+                        <div class="product-buy__tab product-buy__tab_active">Стоимость</div>
+                        <!-- /.product-buy__tab -->
+                        <div class="product-buy__tab">В рассрочку</div>
+                        <!-- /.product-buy__tab -->
+                    </div>
+                    <!-- /.product-buy__tabs-container -->
+                    <div class="product-buy__tabs-content-container js-tab-sections">
+                        <div class="product-buy__tab-content product-buy__tab-content_active">
+                            <p class="product-buy__price-current">23 660 <span class="product-buy__rubl">₽</span></p>
+                            <p class="product-buy__price-previous">38 460 <span class="product-buy__rubl">₽</span></p>
+                            <p class="product-buy__economy">Экономия: <span class="product-buy__economy-inner">14 800 <span class="product-buy__rubl">₽</span></span></p>
+                        </div>
+                        <!-- /.product-buy__tab-content -->
+                        <div class="product-buy__tab-content">
+                            <div class="product-buy__tab-credit-inner">
+                                <div>
+                                    <p class="product-buy__price-current">23 660 <span class="product-buy__rubl">₽</span></p>
+                                    <p class="product-buy__price-previous">38 460 <span class="product-buy__rubl">₽</span></p>
+                                    <p class="product-buy__economy">Экономия: <span class="product-buy__economy-inner">14 800 <span class="product-buy__rubl">₽</span></span></p>
+                                </div>
+                                <div class="product-buy__credit-layout-inner">
+                                    <p class="product-buy__credit">Рассрочка</p>
+                                    <p class="product-buy__credit">1 755 ₽/мес.</p>
+                                </div>
+                            </div>
+                            <!-- /.product-buy__tab-credit-inner -->
+                        </div>
+                        <!-- /.product-buy__tab-content -->
+                    </div>
+                    <!-- /.product-buy__tabs-content-container -->
+                    <div class="product-buy__two-col-container js-timer" data-date="2017-02-14">
+                        <p class="product-buy__timer-text">До конца акции</p>
+                        <p class="product-buy__timer-text"><span class="product-buy__timer-count js-timer-days">5 </span> дней <span class="product-buy__timer-count"><span class="js-timer-hours"> 7</span>:<span class="js-timer-minutes">25</span>:<span class="js-timer-sec">50</span></span></p>
+                    </div>
+                    <!-- /.product-buy__two-col-container -->
+
+                    <button class="btn product-buy__btn"><svg class="icon icon-search"><use xlink:href="#icon-cart"></use></svg>Купить</button>
+                    <button class="btn product-buy__btn-tap">Заказать в 1 клик</button>
+            
+                    <div class="product-buy__two-col-container product-buy__two-col-container_btns">
+                        <p class="product-buy__two-col product-buy__two-col_favorite">Запомнить</p>
+                        <!-- Active state — add class .product-buy__two-col_compare_active -->
+                        <div class="product-buy__two-col product-buy__two-col_compare">
+                            <span>Сравнить</span>
+                            <span>В сравнении</span>
+                            <div class="product-buy__compare-popup">
+                                <p class="product-buy__compare-link">Перейти к сравнению</p>
+                                <p class="product-buy__compare-delete">Удалить из сравнения</p>
+                            </div>
+                            <!-- /.product-buy__compare-popup -->
+                        </div>
+                    </div>
+                    <!-- /.product-buy__two-col-container -->
+                </form>
+            </div>
+            <!-- /.product-buy__container -->
+            <div class="product-buy__container product-buy__container_second">
+                <div class="product-buy__two-col-container product-buy__two-col-container_links">
+                    <p class="product-buy__two-col product-buy__two-col_link">Доставка за 2 дня</p>
+                    <div class="product-buy__two-col product-buy__two-col_tip">
+                        <svg class="icon icon-tip"><use xlink:href="#icon-tip"></use></svg>
+                        <div class="product-buy__tip-popup">
+                            <p>При наличии продукции на складе срок доставки от 2 до 5 дней. При отсутствии — 9-12 дней.</p>
+                        </div>
+                        <!-- /.product-buy__compare-popup -->
+                    </div>
+                </div>
+                <!-- /.product-buy__two-col-container -->
+            </div>
+            <!-- /.product-buy__container -->
+        </section>
+        <!-- /.product-buy -->
+        <section class="product-features">
+            <div class="product-features__wrapper">
+                <h2 class="product-features__title">Особенности</h2>
+                <!-- /.product-features__title -->
+                <div class="product-features__container">
+                    <div class="product-features__feature">
+                        <img src="img/svg/guarantee.svg" class="product-features__img">
+                        <!-- /.product-feature__img -->
+                        <p class="product-features__subscription">Гарантия<br>18 месяцев</p>
+                        <!-- /.product-feature__subscription -->
+                    </div>
+                    <!-- /.product-features__feature -->
+                    <div class="product-features__feature">
+                        <img src="img/svg/delivery.svg" class="product-features__img">
+                        <!-- /.product-feature__img -->
+                        <p class="product-features__subscription">Эластичная пена OrtoFoam</p>
+                        <!-- /.product-feature__subscription -->
+                    </div>
+                    <!-- /.product-features__feature -->
+                    <div class="product-features__feature">
+                        <img src="img/weather.png" class="product-features__img">
+                        <!-- /.product-feature__img -->
+                        <p class="product-features__subscription">Матрас<br>Зима/Лето</p>
+                        <!-- /.product-feature__subscription -->
+                    </div>
+                    <!-- /.product-features__feature -->
+                    <div class="product-features__feature">
+                        <img src="img/bed-spring.png" class="product-features__img">
+                        <!-- /.product-feature__img -->
+                        <p class="product-features__subscription">3-х зональный пружинный блок</p>
+                        <!-- /.product-feature__subscription -->
+                    </div>
+                    <!-- /.product-features__feature -->
+                </div>
+                <!-- /.product-features__container -->
+            </div>
+            <!-- /.product-features__wrapper -->
+        </section>
+        <!-- /.product-features -->
+        <section class="product-specific">
+            <div class="product-specific__wrapper">
+                <h2 class="product-specific__title">Характеристики</h2>
+                <!-- /.product-specific__title -->
+                <div class="product-specific__container">
+                    <div class="product-specific__column">
+                        <div class="product-specific__item">
+                            <div class="product-specific__c-name">
+                                <p class="product-specific__name">Пружинный блок</p>
+                                <!-- /.product-specific__name -->
+                                <div class="product-specific__hr"></div>
+                                <!-- /.product-specific__hr -->
+                            </div>
+                            <!-- /.product-specific__c-name -->
+                            <div class="product-specific__c-value">Блок независимых пружин</div>
+                            <!-- /.product-specific__c-value -->
+                        </div>
+                        <!-- /.product-specific__item -->
+                        <div class="product-specific__item">
+                            <div class="product-specific__c-name">
+                                <p class="product-specific__name">Жесткость</p>
+                                <!-- /.product-specific__name -->
+                                <div class="product-specific__hr"></div>
+                                <!-- /.product-specific__hr -->
+                            </div>
+                            <!-- /.product-specific__c-name -->
+                            <div class="product-specific__c-value">Средняя</div>
+                            <!-- /.product-specific__c-value -->
+                        </div>
+                        <!-- /.product-specific__item -->
+                        <div class="product-specific__item">
+                            <div class="product-specific__c-name">
+                                <p class="product-specific__name">Макс. вес на 1 место</p>
+                                <!-- /.product-specific__name -->
+                                <div class="product-specific__hr"></div>
+                                <!-- /.product-specific__hr -->
+                            </div>
+                            <!-- /.product-specific__c-name -->
+                            <div class="product-specific__c-value">Свыше 140 кг</div>
+                            <!-- /.product-specific__c-value -->
+                        </div>
+                        <!-- /.product-specific__item -->
+                        <div class="product-specific__item">
+                            <div class="product-specific__c-name">
+                                <p class="product-specific__name">Высота</p>
+                                <!-- /.product-specific__name -->
+                                <div class="product-specific__hr"></div>
+                                <!-- /.product-specific__hr -->
+                            </div>
+                            <!-- /.product-specific__c-name -->
+                            <div class="product-specific__c-value">19.5 см</div>
+                            <!-- /.product-specific__c-value -->
+                        </div>
+                        <!-- /.product-specific__item -->
+                        <div class="product-specific__item">
+                            <div class="product-specific__c-name">
+                                <p class="product-specific__name">Зима / Лето</p>
+                                <!-- /.product-specific__name -->
+                                <div class="product-specific__hr"></div>
+                                <!-- /.product-specific__hr -->
+                            </div>
+                            <!-- /.product-specific__c-name -->
+                            <div class="product-specific__c-value">Нет</div>
+                            <!-- /.product-specific__c-value -->
+                        </div>
+                        <!-- /.product-specific__item -->
+                    </div>
+                    <!-- /.product-specific__column -->
+                    <div class="product-specific__column">
+                        <div class="product-specific__item">
+                            <div class="product-specific__c-name">
+                                <p class="product-specific__name">Кол-во пружин</p>
+                                <!-- /.product-specific__name -->
+                                <div class="product-specific__hr"></div>
+                                <!-- /.product-specific__hr -->
+                            </div>
+                            <!-- /.product-specific__c-name -->
+                            <div class="product-specific__c-value">550 на спальное место</div>
+                            <!-- /.product-specific__c-value -->
+                        </div>
+                        <!-- /.product-specific__item -->
+                        <div class="product-specific__item">
+                            <div class="product-specific__c-name">
+                                <p class="product-specific__name">Вес</p>
+                                <!-- /.product-specific__name -->
+                                <div class="product-specific__hr"></div>
+                                <!-- /.product-specific__hr -->
+                            </div>
+                            <!-- /.product-specific__c-name -->
+                            <div class="product-specific__c-value">от 16.20 кг
+                                <div class="product-specific__tip">
+                                    <svg class="icon icon-tip"><use xlink:href="#icon-tip"></use></svg>
+                                    <div class="product-specific__tip-popup">
+                                        <p>При наличии продукции на складе срок доставки от 2 до 5 дней. При отсутствии — 9-12 дней.</p>
+                                    </div>
+                                    <!-- /.product-specific__tip-popup -->
+                                </div>
+                                <!-- /.product-specific__tip -->
+                            </div>
+                            <!-- /.product-specific__c-value -->
+                        </div>
+                        <!-- /.product-specific__item -->
+                        <div class="product-specific__item">
+                            <div class="product-specific__c-name">
+                                <p class="product-specific__name">Гарантия</p>
+                                <!-- /.product-specific__name -->
+                                <div class="product-specific__hr"></div>
+                                <!-- /.product-specific__hr -->
+                            </div>
+                            <!-- /.product-specific__c-name -->
+                            <div class="product-specific__c-value">18 месяцев</div>
+                            <!-- /.product-specific__c-value -->
+                        </div>
+                        <!-- /.product-specific__item -->
+                        <div class="product-specific__item">
+                            <div class="product-specific__c-name">
+                                <p class="product-specific__name">Расширенная гарантия</p>
+                                <!-- /.product-specific__name -->
+                                <div class="product-specific__hr"></div>
+                                <!-- /.product-specific__hr -->
+                            </div>
+                            <!-- /.product-specific__c-name -->
+                            <div class="product-specific__c-value">25 лет
+                                <div class="product-specific__tip">
+                                    <svg class="icon icon-tip"><use xlink:href="#icon-tip"></use></svg>
+                                    <div class="product-specific__tip-popup">
+                                        <p>При наличии продукции на складе срок доставки от 2 до 5 дней. При отсутствии — 9-12 дней.</p>
+                                    </div>
+                                    <!-- /.product-specific__tip-popup -->
+                                </div>
+                                <!-- /.product-specific__tip -->
+                            </div>
+                            <!-- /.product-specific__c-value -->
+                        </div>
+                        <!-- /.product-specific__item -->
+                    </div>
+                    <!-- /.product-specific__column -->
+                </div>
+            </div>
+            <!-- /.product-speciic__wrapper -->
+        </section>
+        <!-- /.product-specific -->
+        <section class="product-video" id="product-video">
+            <div class="product-video__wrapper">
+                <iframe width="856" height="481" src="https://www.youtube.com/embed/SwNM8twb3ww" frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+            <!-- /.product-video__wrapper -->
+        </section>
+        <!-- /.product-video -->
+        <section class="product-desc">
+            <div class="product-desc__wrapper">
+                <h2 class="product-desc__title">Описание</h2>
+                <!-- /.product-desc__title -->
+                <div class="product-desc__container">
+                    <p class="product-desc__text">Разносторонний матрас Fortuna с анатомическим эффектом позволит Вам менять степень жесткости. Более мягкая сторона на основе хлопкового войлока и эластичной пены flexfoam идеально подойдет для сна зимой, даря неповторимую мягкость и заботу. Вторая, более жесткая сторона, на основе кокоса и пены flexfoam, выдерживает большие нагрузки. Пружинные матрасы Fortuna подойдут тем, кто любит менять уровень жесткости спального места в зависимости от физического состояния, привычек и климатических условий.</p>
+                    <!-- /.product-desc__text -->
+                    <div class="product-desc__file-container">
+                        <img class="product-desc__pdf" src="img/svg/pdf_icon.svg">
+                        <!-- /.product-desc__pdf -->
+                        <p class="product-desc__file-name">Серия матрасов Askona Promo</p>
+                        <!-- /.product-desc__file-name -->
+                        <a href="documents/test.pdf" target="_blank"><img class="product-desc__view" src="img/svg/eye.svg"></a>
+                        <!-- /.product-desc__view -->
+                        <div class="product-desc__divider"></div>
+                        <!-- /.product-desc__divider -->
+                        <a href="documents/test.pdf" download><img class="product-desc__download" src="img/svg/download.svg"></a>
+                        <!-- /.product-desc__download -->
+                    </div>
+                    <!-- /.product-desc__file-container -->
+                </div>
+                <!-- /.product-desc__container -->
+            </div>
+            <!-- /.product-desc__wrapper -->
+        </section>
+        <!-- /.product-desc -->
+        <section class="product-materials">
+            <div class="product-materials__wrapper">
+                <h2 class="product-materials__title">Материалы и дизайн</h2>
+                <!-- /.product-materials__title -->
+                <div class="product-materials__container">
+                    <div class="product-materials__item product-materials__item_left">
+                        <img class="product-materials__img" src="img/materials/1.png" alt="material">
+                        <div class="product-materials__text">
+                            <p class="product-materials__m-title">Хлопковый жаккард, стеганный на синтепоне с использованием ультразвуковой стежки</p>
+                            <!-- /.product-materials__title -->
+                            <p class="product-materials__m-desc">Идеально подойдет для сна зимой, даря неповторимую мягкость и заботу.</p>
+                            <!-- /.product-materials__m-desc -->
+                        </div>
+                        <!-- /.product-materials__text -->
+                    </div>
+                    <!-- /.product-materials__item_left -->
+                    <div class="product-materials__item product-materials__item_right">
+                        <img class="product-materials__img" src="img/materials/2.png" alt="material">
+                        <div class="product-materials__text">
+                            <p class="product-materials__m-title">Эластичная пена OrtoFoam</p>
+                            <!-- /.product-materials__title -->
+                            <p class="product-materials__m-desc">Высокоэластичный, гипоаллергенный, искусственный материал с двойной ячеистой структурой. Наиболее точно подстраивается к анатомии тела, обеспечивает идеальную поддержку позвоночника и гарантирует сбалансированный микроклимат сна.</p>
+                            <!-- /.product-materials__m-desc -->
+                        </div>
+                        <!-- /.product-materials__text -->
+                    </div>
+                    <!-- /.product-materials__item_left -->
+                    <div class="product-materials__item product-materials__item_left">
+                        <img class="product-materials__img" src="img/materials/3.png" alt="material">
+                        <div class="product-materials__text">
+                            <p class="product-materials__m-title">3-x зональный пружинный блок</p>
+                            <!-- /.product-materials__title -->
+                            <p class="product-materials__m-desc">Полностью повторяет контуры тела и создает оптимальный комфорт при использовании.</p>
+                            <!-- /.product-materials__m-desc -->
+                        </div>
+                        <!-- /.product-materials__text -->
+                    </div>
+                    <!-- /.product-materials__item_left -->
+                    <div class="product-materials__item product-materials__item_right">
+                        <img class="product-materials__img" src="img/materials/4.png" alt="material">
+                        <div class="product-materials__text">
+                            <p class="product-materials__m-title">Слой натурального кокоса</p>
+                            <!-- /.product-materials__title -->
+                            <p class="product-materials__m-desc">Матрасы из кокосовой койры долговечны, не подвержены гниению и плесени, не впитывают влагу и запахи, а также препятствуют появлению пылевых клещей.</p>
+                            <!-- /.product-materials__m-desc -->
+                        </div>
+                        <!-- /.product-materials__text -->
+                    </div>
+                    <!-- /.product-materials__item_left -->
+                </div>
+                <!-- /.product-materials__container -->
+            </div>
+            <!-- /.product-materials__wrapper -->
+        </section>
+        <!-- /.product-materials -->
+
+        <footer class="footer-main">
+            <div class="footer-main__inner container">
+                <div class="subscribe footer-main__subscribe">
+                    <div class="subscribe__title">
+                        <h3 class="subscribe__label">Подписаться на рассылку</h3>
+                        <p class="subscribe__descr">
+                            Скидки, новинки и полезные статьи<br> о сне раз в неделю
+                        </p>
+                    </div>
+                    <div class="subscribe__panel">
+                        <form action="" method="POST" class="subscribe__panel-form">
+                            <input type="text" placeholder="Введите ваш e-mail" class="subscribe__panel-field">
+                            <button class="subscribe__panel-btn"></button>
+                        </form>
+                    </div>
+                    <div class="subscribe__follow">
+                        <div class="subscribe__follow-label">Следите<br> за новостями</div>
+                        <div class="subscribe__social-icons">
+                            <a href="javascript:void(0)" class="social-icon social-icon_fb subscribe__social-icon"></a>
+                            <a href="javascript:void(0)" class="social-icon social-icon_vk subscribe__social-icon"></a>
+                            <a href="javascript:void(0)" class="social-icon social-icon_ok subscribe__social-icon"></a>
+                            <a href="javascript:void(0)" class="social-icon social-icon_insta subscribe__social-icon"></a>
+                            <a href="javascript:void(0)" class="social-icon social-icon_youtube subscribe__social-icon"></a>
+                        </div>
+                    </div>
+                </div><!-- /subscribe -->
+                <div class="bottom-menu">
+                    <div class="bottom-menu__columns">
+                        <div class="bottom-menu__col">
+                            <h5 class="bottom-menu__title">О здоровом сне</h5>
+                            <ul class="bottom-menu__list">
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Из чего состоит здоровье
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Сколько нужно спать
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Как улучшить свой сон
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Как обустроить спальню для здорового сна
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /bottom-menu__col -->
+                        <div class="bottom-menu__col">
+                            <h5 class="bottom-menu__title">Об «Асконе»</h5>
+                            <ul class="bottom-menu__list">
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Производство
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Дизайн и технологии
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Лаборатория сна
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        История компании
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Принципы и миссия
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Новости
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /bottom-menu__col -->
+                        <div class="bottom-menu__col">
+                            <h5 class="bottom-menu__title">Сервисы</h5>
+                            <ul class="bottom-menu__list">
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Где мой заказ
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Оплата и доставка
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Гарантия
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Обмен и возврат товара
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Рассрочка и кредит
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Акции и скидки
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Услуги
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Клуб любителей здорового сна
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /bottom-menu__col -->
+                        <div class="bottom-menu__col">
+                            <h5 class="bottom-menu__title">Ортопедические матрасы</h5>
+                            <ul class="bottom-menu__list">
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        С независимым пружинным блоком
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Беспружинные
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Детские
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Односпальные
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Двуспальные
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Тонкие
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Жесткие
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Кокосовые
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /bottom-menu__col -->
+                        <div class="bottom-menu__col">
+                            <h5 class="bottom-menu__title">Прочие товары</h5>
+                            <ul class="bottom-menu__list">
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Наматрасники
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Защитные чехлы
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Ортопедические подушки
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Кровати
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Одеяла
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Постельное белье
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Товары для спальни
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Диваны
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /bottom-menu__col -->
+                        <div class="bottom-menu__col">
+                            <h5 class="bottom-menu__title">Партнерам</h5>
+                            <ul class="bottom-menu__list">
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Предложение для отелей
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Франчайзинг от ХК Аскона
+                                    </a>
+                                </li>
+                            </ul>
+                            <h5 class="bottom-menu__title">Контакты</h5>
+                            <ul class="bottom-menu__list">
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Контакты подразделений
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Оптовые продажи
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Где купить
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /bottom-menu__col -->
+                    </div><!-- /bottom-menu__columns -->
+                </div><!-- /bottom-menu -->
+                <div class="footer-main__bottom">
+                    <div class="footer-main__copy">
+                        © 1990–2016. Компания «Аскона». Все права защищены.
+                    </div>
+                    <div class="footer-main__member-ico"></div>
+                    <div class="payment payment_big footer-main__payment">
+                        <span class="payment__item payment__item_big payment__item_master-big"></span>
+                        <span class="payment__item payment__item_big payment__item_visa-big"></span>
+                        <span class="payment__item payment__item_big payment__item_paypal-big"></span>
+                    </div>
+                    <div class="footer-main__brand-ico"></div>
+                    <div class="footer-main__powered-by">Сделано в <a href="javascript:void(0)" class="footer-main__powered-by-link">Greensight</a></div>
+                </div><!-- /footer-main__bottom -->
+            </div><!-- /footer-main__inner -->
+        </footer><!-- /footer-main -->
+    </div>
+
+    <script src="js/external.js" type="text/javascript"></script>
+    <script src="js/internal.js" type="text/javascript"></script>
+</body>
+</html>

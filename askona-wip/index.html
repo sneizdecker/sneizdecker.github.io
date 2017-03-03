@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie8" lang="ru" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 9 ]> <html class="ie9" lang="ru" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"> -->
+    <title></title>
+
+    <link href="css/external.css" rel="stylesheet">
+    <link href="css/internal.css" rel="stylesheet">
+
+    <!-- jquery подключаем в шапке т.к. какой-то js может быть внутри компонентов -->
+    <script src="js/jquery/jquery.min.js" type="text/javascript"></script>
+
+    <!--[if lte IE 8]>
+        <script src="js/html5shiv/html5shiv.min.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--[if lt IE 10]>
+    <div class="browse-happy">
+        <div class="container">
+            <p class="browse-happy__notice">Мы обнаружили, что вы используете <strong>устаревшую версию</strong> браузера Internet Explorer</p>
+            <p class="browse-happy__security">Из соображений безопасности этот сайт поддерживает Internet Explorer версии 10 и выше
+                <br>Кроме того, этот и многие другие сайты могут отображаться <strong>некорректно</strong></p>
+            <p class="browse-happy__update">Пожалуйста, обновите свой браузер по этой <a href="http://browsehappy.com/" target="_blank">ссылке</a></p>
+            <p class="browse-happy__recommend">(мы рекомендуем <a href="http://www.google.com/chrome" target="_blank">Google Chrome</a>)</p>
+        </div>
+    </div>
+    <![endif]-->
+
+    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-search" viewBox="0 0 18 18">
+                <path class="icon-search__path" d="M18.353,17.646 L17.646,18.353 L13.286,13.993 C11.876,15.238 10.029,16.000 8.000,16.000 C3.582,16.000 -0.000,12.418 -0.000,8.000 C-0.000,3.582 3.582,-0.000 8.000,-0.000 C12.418,-0.000 16.000,3.582 16.000,8.000 C16.000,10.029 15.238,11.876 13.993,13.286 L18.353,17.646 ZM8.000,1.000 C4.134,1.000 1.000,4.134 1.000,8.000 C1.000,11.866 4.134,15.000 8.000,15.000 C11.866,15.000 15.000,11.866 15.000,8.000 C15.000,4.134 11.866,1.000 8.000,1.000 Z"/>
+            </symbol>
+            <symbol id="icon-tip" width="15" height="15" viewBox="0 0 15 15">
+                <image id="tip" data-name="tip" width="15" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEUAAAAnl50nl50nl50nl50nl50nl50nl50nl50nl50nl50nl50nl50nl50nl50nl50nl51vur6aztFEpar////i8fLx+Pg1nqR9wcRhs7ep1diMyMvU6usAAABX62OaAAAAEHRSTlMAAlmy5fnmIswj6ctat+vqqdj5DQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAB7SURBVAjXZU9HAsMgDBMZZJFiEkJG+/931jZwig7IMpYHAJim7XrbNgaKYaSMcRA5zVQxT1y8SBS2bWdaDJzKeMQkCYdV9HlxKnCw4lO8Id78WhR5pUeor//pq2Szn0jbi1/70/4Lyq7Mv6PW8/yy31n3e+2v93ny+b4/RJILXnU2uzcAAAAASUVORK5CYII="/>
+            </symbol>
+            <symbol id="icon-cart" viewBox="0 0 25 27">
+                <path id="SvgjsPath1016" d="M1468.13 84.1165H1482.95C1484.63 84.1165 1486 82.7908 1486 81.1663V75.13810000000001C1486 75.13310000000001 1486 75.12290000000002 1486 75.1175C1486 75.1019 1486 75.0908 1486 75.07520000000001C1486 75.06370000000001 1486 75.05350000000001 1485.99 75.04320000000001C1485.99 75.03250000000001 1485.99 75.01610000000001 1485.99 75.00540000000001C1485.99 74.99480000000001 1485.98 74.98370000000001 1485.98 74.97260000000001C1485.98 74.96230000000001 1485.98 74.95210000000002 1485.97 74.93610000000001C1485.97 74.92500000000001 1485.97 74.91470000000001 1485.96 74.90320000000001C1485.96 74.89290000000001 1485.96 74.88270000000001 1485.95 74.87200000000001C1485.94 74.86090000000002 1485.94 74.85070000000002 1485.93 74.83380000000001C1485.93 74.82360000000001 1485.92 74.81250000000001 1485.92 74.808C1485.91 74.79690000000001 1485.91 74.7866 1485.9 74.77550000000001C1485.89 74.76490000000001 1485.89 74.7595 1485.88 74.7488C1485.88 74.7382 1485.8700000000001 74.7279 1485.8600000000001 74.71640000000001C1485.8600000000001 74.7061 1485.8500000000001 74.7004 1485.8400000000001 74.69050000000001C1485.8300000000002 74.67950000000002 1485.8200000000002 74.67330000000001 1485.8200000000002 74.66300000000001C1485.8100000000002 74.65200000000002 1485.8000000000002 74.6474 1485.8000000000002 74.63680000000001C1485.7900000000002 74.62650000000001 1485.7800000000002 74.62070000000001 1485.7700000000002 74.61540000000001C1485.7600000000002 74.60390000000001 1485.7600000000002 74.599 1485.7500000000002 74.5883C1485.7300000000002 74.5834 1485.7300000000002 74.5723 1485.7200000000003 74.56660000000001C1485.7100000000003 74.56200000000001 1485.7000000000003 74.551 1485.6800000000003 74.54560000000001C1485.6700000000003 74.5403 1485.6700000000003 74.53540000000001 1485.6600000000003 74.5296C1485.6500000000003 74.5247 1485.6300000000003 74.5185 1485.6200000000003 74.5078C1485.6100000000004 74.5025 1485.6000000000004 74.49680000000001 1485.5900000000004 74.4914C1485.5800000000004 74.48649999999999 1485.5700000000004 74.4816 1485.5600000000004 74.4762C1485.5500000000004 74.4701 1485.5400000000004 74.46560000000001 1485.5200000000004 74.4598C1485.5100000000004 74.4545 1485.5000000000005 74.4545 1485.4900000000005 74.4487C1485.4800000000005 74.443 1485.4600000000005 74.4381 1485.4500000000005 74.4381C1485.4400000000005 74.4381 1485.4300000000005 74.43230000000001 1485.4200000000005 74.43230000000001C1485.4100000000005 74.42780000000002 1485.4000000000005 74.42780000000002 1485.3800000000006 74.42780000000002C1485.3800000000006 74.42780000000002 1485.3700000000006 74.42250000000001 1485.3600000000006 74.42250000000001L1466.5700000000006 71.91680000000001V69.38250000000001C1466.5700000000006 69.35700000000001 1466.5700000000006 69.32990000000001 1466.5700000000006 69.30810000000001C1466.5700000000006 69.3032 1466.5700000000006 69.29870000000001 1466.5600000000006 69.28760000000001C1466.5600000000006 69.2716 1466.5500000000006 69.25600000000001 1466.5500000000006 69.23920000000001C1466.5500000000006 69.2232 1466.5500000000006 69.21330000000002 1466.5400000000006 69.19650000000001C1466.5400000000006 69.18580000000001 1466.5400000000006 69.18010000000001 1466.5400000000006 69.16940000000001C1466.5300000000007 69.1538 1466.5300000000007 69.13820000000001 1466.5200000000007 69.1222C1466.5200000000007 69.11680000000001 1466.5200000000007 69.10570000000001 1466.5200000000007 69.10040000000001C1466.5100000000007 69.0848 1466.5100000000007 69.0737 1466.4900000000007 69.05770000000001C1466.4900000000007 69.0528 1466.4900000000007 69.04250000000002 1466.4800000000007 69.03590000000001C1466.4800000000007 69.02570000000001 1466.4700000000007 69.01500000000001 1466.4600000000007 69.00470000000001C1466.4600000000007 68.99370000000002 1466.4500000000007 68.98830000000001 1466.4400000000007 68.97680000000001C1466.4400000000007 68.96660000000001 1466.4300000000007 68.96160000000002 1466.4300000000007 68.95060000000001C1466.4200000000008 68.94030000000001 1466.4100000000008 68.92920000000001 1466.4100000000008 68.9193C1466.4000000000008 68.9128 1466.3900000000008 68.90740000000001 1466.3900000000008 68.9021C1466.3800000000008 68.8923 1466.3700000000008 68.882 1466.3600000000008 68.87010000000001C1466.3500000000008 68.86470000000001 1466.3400000000008 68.8598 1466.3400000000008 68.8541C1466.3300000000008 68.8438 1466.3200000000008 68.8327 1466.3000000000009 68.822C1466.3000000000009 68.8163 1466.2800000000009 68.8122 1466.2800000000009 68.8069C1466.270000000001 68.7958 1466.260000000001 68.7904 1466.250000000001 68.77929999999999C1466.230000000001 68.7695 1466.210000000001 68.7584 1466.200000000001 68.75269999999999C1466.200000000001 68.7477 1466.190000000001 68.7477 1466.180000000001 68.74239999999999C1466.160000000001 68.73169999999999 1466.130000000001 68.72189999999999 1466.110000000001 68.71L1462.040000000001 67.0542C1461.660000000001 66.89819999999999 1461.2200000000012 67.0702 1461.060000000001 67.43849999999999C1460.900000000001 67.80709999999999 1461.080000000001 68.22959999999999 1461.4600000000012 68.38399999999999L1465.070000000001 69.85909999999998V85.66599999999998C1465.070000000001 87.16159999999998 1466.2300000000012 88.40189999999998 1467.7300000000012 88.58829999999998C1467.4600000000012 89.02679999999998 1467.300000000001 89.53999999999998 1467.300000000001 90.08519999999997C1467.300000000001 91.69379999999997 1468.660000000001 92.99809999999997 1470.310000000001 92.99809999999997C1471.9700000000012 92.99809999999997 1473.330000000001 91.68879999999997 1473.330000000001 90.08519999999997C1473.330000000001 89.55059999999997 1473.180000000001 89.04359999999997 1472.910000000001 88.61539999999997H1479.630000000001C1479.360000000001 89.04849999999996 1479.210000000001 89.55059999999996 1479.210000000001 90.08519999999997C1479.210000000001 91.69379999999997 1480.5600000000009 92.99809999999997 1482.220000000001 92.99809999999997C1483.880000000001 92.99809999999997 1485.240000000001 91.68879999999997 1485.240000000001 90.08519999999997C1485.240000000001 88.48239999999997 1483.880000000001 87.17229999999998 1482.220000000001 87.17229999999998H1468.130000000001C1467.2600000000011 87.17229999999998 1466.570000000001 86.49409999999997 1466.570000000001 85.66599999999998V83.71009999999998C1467.0200000000011 83.96629999999999 1467.560000000001 84.11649999999999 1468.130000000001 84.11649999999999ZM1471.84 90.0799C1471.84 90.89189999999999 1471.1499999999999 91.5492 1470.32 91.5492C1469.49 91.5492 1468.8 90.8866 1468.8 90.0799C1468.8 89.2727 1469.49 88.60969999999999 1470.32 88.60969999999999C1471.1499999999999 88.60969999999999 1471.84 89.2674 1471.84 90.0799ZM1483.75 90.0799C1483.75 90.89189999999999 1483.06 91.5492 1482.23 91.5492C1481.39 91.5492 1480.71 90.8866 1480.71 90.0799C1480.71 89.2727 1481.39 88.60969999999999 1482.23 88.60969999999999C1483.06 88.60969999999999 1483.75 89.2674 1483.75 90.0799ZM1482.95 82.673H1468.13C1467.2600000000002 82.673 1466.5700000000002 81.9948 1466.5700000000002 81.1663V73.36980000000001L1484.5100000000002 75.75880000000001V81.16090000000001C1484.5100000000002 82.00010000000002 1483.8000000000002 82.67300000000002 1482.9500000000003 82.67300000000002Z " fill="#fff" fill-opacity="1" transform="matrix(1,0,0,1,-1461,-66)"></path>
+            </symbol>
+        </defs>
+    </svg>
+
+
+    <div class="wrap-main">
+        <header class="header-main">
+            <div class="top-menu">
+                <div class="top-menu__inner container">
+                    <ul class="top-menu__list">
+                        <li class="top-menu__item">
+                            <a href="javascript:void(0)" class="top-menu__link top-menu__link_enpedia">Энциклопедия сна</a>
+                        </li>
+                        <li class="top-menu__item">
+                            <a href="javascript:void(0)" class="top-menu__link">Доставка и оплата</a>
+                        </li>
+                        <li class="top-menu__item">
+                            <a href="javascript:void(0)" class="top-menu__link">Гарантии</a>
+                        </li>
+                        <li class="top-menu__item">
+                            <a href="javascript:void(0)" class="top-menu__link top-menu__link_services">Сервисы</a>
+                            <div class="header-drop top-menu__header-drop">
+                            <!-- <div class="header-drop header-drop_show top-menu__header-drop"> -->
+                                <ul class="header-drop__list">
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Обмен и возврат
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Рассрочка и кредит
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Сроки изготовления
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Замер спального места
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Сборка мебели
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Дополнительные услгуи
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="top-menu__item">
+                            <a href="javascript:void(0)" class="top-menu__link">Бонусная программа</a>
+                        </li>
+                    </ul>
+
+                    <ul class="top-menu__list top-menu__list_right">
+                        <li class="top-menu__item">
+                            <a href="javascript:void(0)" class="top-menu__link">О компании</a>
+                        </li>
+                        <li class="top-menu__item">
+                            <a href="javascript:void(0)" class="top-menu__link">Партнёрам</a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- /top-menu -->
+            <div class="main-panel">
+                <div class="main-panel__inner container">
+                    <div class="main-panel__left">
+                        <a href="javascript:void(0)" class="logo main-panel__logo">
+                            <img src="img/logo.png" alt="" class="logo__img">
+                        </a>
+                        <div class="location main-panel__location">
+                            <div class="location__item location__item_left">
+                                <a href="javascript:void(0)" class="location__link">Москва</a>
+                                <!-- <div class="header-drop header-drop_city location__header-drop"> -->
+                                <div class="header-drop header-drop_show header-drop_city location__header-drop">
+                                    <div class="header-drop__close"></div>
+                                    <div class="header-drop__content">
+                                        <div class="header-drop__question">Ваш город Москва?</div>
+                                        <div class="header-drop__buttons">
+                                            <button class="btn">Да</button>
+                                            <button class="btn btn_lite">Нет, выбрать другой</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="location__item">
+                                <a  href="javascript:void(0)" class="location__link location__link_shops">Магазины</a>
+                                <div class="location__count">62</div>
+                            </div>
+                        </div>
+                    </div><!-- /main-panel__left -->
+                    <div class="main-panel__right">
+                        <a href="javascript:void(0)" class="callback-btn main-panel__callback-btn">Перезвоните<br>мне</a>
+                        <div class="phone main-panel__phone">
+                            <div class="phone__number">8 800 200-40-90</div>
+                            <div class="phone__description">Бесплатно и круглосуточно</div>
+                        </div>
+                        <div class="main-panel__login">
+                            <a href="javascript:void(0)" class="main-panel__enter">Войти</a>
+                            <!-- <a href="javascript:void(0)" class="main-panel__enter main-panel__enter_hide">Войти</a> -->
+                            <a href="javascript:void(0)" class="main-panel__cabinet">Личный кабинет</a>
+                            <!-- <a href="javascript:void(0)" class="main-panel__cabinet main-panel__cabinet_show">Личный кабинет</a> -->
+                            <div class="header-drop main-panel__header-drop">
+                                <ul class="header-drop__list">
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Персональные данные
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Отложенные товары <span class="header-drop__count">13</span>
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Корзина <span class="header-drop__count">2</span>
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Список сравнения <span class="header-drop__count">8</span>
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Заказы
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Карта выгодных покупок
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Купоны
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Обратная связь
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Выйти
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="customer-panel main-panel__customer-panel">
+                            <div class="customer-panel__items">
+                                <a href="javascript:void(0)" class="customer-panel__item customer-panel__item_compare">
+                                    <span class="customer-panel__count">8</span>
+                                </a>
+                                <a href="javascript:void(0)" class="customer-panel__item customer-panel__item_wish">
+                                    <span class="customer-panel__count">13</span>
+                                </a>
+                                <a href="javascript:void(0)" class="customer-panel__item customer-panel__item_cart">
+                                    <span class="customer-panel__count">2</span>
+                                </a>
+                            </div>
+                            <div class="cart-view">
+                                <div class="cart-view__close"></div>
+                                <div class="cart-view__top">
+                                    <h4 class="cart-view__top-title">Корзина <span class="cart-view__top-amount">2</span></h4>
+                                </div>
+                                <div class="cart-view__main">
+                                    <div class="cart-view__item">
+                                        <div class="cart-view__item-del"></div>
+                                        <img class="cart-view__item-img" src="img/cart-view-sample.jpg" alt="">
+                                        <div class="cart-view__item-info">
+                                            <div class="cart-view__item-label">Матрас</div>
+                                            <div class="cart-view__item-title">Askona Quadra</div>
+                                            <div class="cart-view__item-specs">
+                                                <span class="cart-view__item-color"></span>
+                                                Мягкий, до 140 кг, 21 см
+                                            </div>
+                                            <div class="cart-view__item-size">
+                                                180 x 200 см
+                                            </div>
+                                            <div class="cart-view__item-price">
+                                                <span class="cart-view__item-price-txt">17 710</span> <span class="rub rub_small">f</span>
+                                                <div class="pm-counter cart-view__pm-counter">
+                                                    <button class="pm-counter__btn pm-counter__btn_min"></button>
+                                                    <span class="pm-counter__count">1</span>
+                                                    <button class="pm-counter__btn pm-counter__btn_plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /cart-view__item -->
+                                    <div class="cart-view__item">
+                                        <div class="cart-view__item-del"></div>
+                                        <img class="cart-view__item-img" src="img/cart-view-sample.jpg" alt="">
+                                        <div class="cart-view__item-info">
+                                            <div class="cart-view__item-label">Матрас</div>
+                                            <div class="cart-view__item-title">Askona Innovate</div>
+                                            <div class="cart-view__item-specs">
+                                                <span class="cart-view__item-color"></span>
+                                                Мягкий, до 140 кг, 21 см
+                                            </div>
+                                            <div class="cart-view__item-size">
+                                                180 x 200 см
+                                            </div>
+                                            <div class="cart-view__item-price">
+                                                <span class="cart-view__item-price-txt">22 384</span> <span class="rub cart-view__rub">f</span>
+                                                <div class="pm-counter cart-view__pm-counter">
+                                                    <button class="pm-counter__btn pm-counter__btn_min"></button>
+                                                    <span class="pm-counter__count">1</span>
+                                                    <button class="pm-counter__btn pm-counter__btn_plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- /cart-view__item -->
+                                </div>
+                                <div class="cart-view__bot">
+                                    <div class="cart-view__bot-left">
+                                        <div class="cart-view__bot-title">
+                                            Итого:
+                                        </div>
+                                        <div class="cart-view__bot-info">
+                                            Без учёта доставки
+                                        </div>
+                                    </div>
+                                    <div class="cart-view__bot-right">
+                                        <div class="cart-view__price">
+                                            <span class="cart-view__price-txt">40 104</span> <span class="rub rub_normal">f</span>
+                                        </div>
+                                        <div class="payment cart-view__payment">
+                                            <span class="payment__item payment__item_master"></span>
+                                            <span class="payment__item payment__item_visa"></span>
+                                            <span class="payment__item payment__item_paypal"></span>
+                                        </div>
+                                    </div>
+                                    <button class="btn cart-view__btn">Оформить заказ</button>
+                                </div>
+                            </div>
+                            <!-- /cart-view -->
+                        </div>
+                        <div class="main-panel__hamburger">
+                        <!-- <div class="main-panel__hamburger main-panel__hamburger_active"> -->
+                            <span class="main-panel__hamburger-inner"></span>
+                        </div>
+                    </div><!-- /main-panel__right -->
+                </div><!-- /main-panel__inner -->
+            </div><!-- /main-panel -->
+            <div class="main-menu">
+            <!-- <div class="main-menu main-menu_hide"> -->
+                <div class="main-menu__inner container">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a href="javascript:void(0)" class="main-menu__link">Матрасы</a>
+                            <div class="main-menu__drop">
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/mattress-1.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Пружинные</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/mattress-2.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Беспружинные</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/mattress-3.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Детские матрасы</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/mattress-4.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Наматрасники</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/mattress-5.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Защитные чехлы</span>
+                                </a>
+                            </div><!-- /main-menu__drop -->
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="javascript:void(0)" class="main-menu__link">Кровати</a>
+                            <div class="main-menu__drop">
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/bed-1.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Кровати</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/bed-2.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Спальные гарнитуры</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/bed-3.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Изголовья</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/bed-4.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Основания</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/bed-5.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Кровати-трансформеры</span>
+                                </a>
+                            </div><!-- /main-menu__drop -->
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="javascript:void(0)" class="main-menu__link">Диваны</a>
+                            <div class="main-menu__drop">
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/sofa-1.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Прямые диваны</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/sofa-2.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Угловые диваны</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/sofa-3.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Аксессуары к диванам</span>
+                                </a>
+                            </div><!-- /main-menu__drop -->
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="javascript:void(0)" class="main-menu__link">Подушки и одеяла</a>
+                            <div class="main-menu__drop">
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/pillow-1.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Подушки</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/pillow-2.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Одеяла</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/pillow-3.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Защитные чехлы для подушек</span>
+                                </a>
+                            </div><!-- /main-menu__drop -->
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="javascript:void(0)" class="main-menu__link">Шкафы и комоды</a>
+                            <div class="main-menu__drop">
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/cupboard-1.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Распашные шкафы</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/cupboard-2.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Шкафы-купе</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/cupboard-3.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Комоды</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/cupboard-4.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Угловые секции</span>
+                                </a>
+                            </div><!-- /main-menu__drop -->
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="javascript:void()" class="main-menu__link">Малая мебель</a>
+                            <div class="main-menu__drop">
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/furniture-1.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Тумбы</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/furniture-2.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Банкетки</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/furniture-3.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Пуфы</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/furniture-4.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Туалетные столики</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/furniture-5.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Вешалки</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/furniture-6.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Зеркала</span>
+                                </a>
+                            </div><!-- /main-menu__drop -->
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="javascript:void(0)" class="main-menu__link">Асессуары</a>
+                            <div class="main-menu__drop">
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/accessories-1.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Постельное бельё</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/accessories-2.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Светильники</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/accessories-3.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Аромадиффузеры</span>
+                                </a>
+                                <a href="javascript:void(0)" class="main-menu__drop-item">
+                                    <div class="main-menu__drop-img-wrp">
+                                        <img src="img/main-menu/accessories-4.png" class="main-menu__drop-img">
+                                    </div>
+                                    <span class="main-menu__drop-title">Массажёры</span>
+                                </a>
+                            </div><!-- /main-menu__drop -->
+                        </li>
+                        <li class="main-menu__item main-menu__item_sale">
+                            <a href="javascript:void(0)" class="main-menu__link main-menu__link_sale">Акции</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="search-btn main-menu__search-btn"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- /main-menu -->
+            <div class="mob-menu">
+                <div class="mob-menu__top">
+                    <div class="phone mob-menu__phone">
+                        <div class="phone__number">8 800 200-40-90</div>
+                        <div class="phone__description">Бесплатно и круглосуточно</div>
+                    </div>
+                    <a href="javascript:void(0)" class="callback-btn mob-menu__callback-btn">Перезвоните мне</a>
+                </div><!-- /mob-menu__top -->
+                <div class="mob-menu__search">
+                    <div class="mini-form mob-menu__mini-form">
+                      <form action="" method="POST" class="mini-form__form">
+                        <input placeholder="Поиск по сайту" type="text" class="mini-form__field">
+                        <button class="mini-form__btn mini-form__btn_search mini-form__btn_mob-search"></button>
+                      </form>
+                    </div>
+                </div><!-- /mob-menu__search -->
+                <div class="mob-accordion">
+                    <div class="mob-accordion__item">
+                        <!-- <a href="javascript:void(0)" class="mob-accordion__title">Матрасы</a> -->
+                        <a href="javascript:void(0)" class="mob-accordion__title mob-accordion__title_active">Матрасы</a>
+                        <div class="mob-accordion__content">
+                            <ul class="mob-accordion__list">
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Пружинные</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Беспружинные</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Детские матрасы</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Наматрасники</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Защитные чехлы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /mob-accordion__item -->
+                    <div class="mob-accordion__item">
+                        <a href="javascript:void(0)" class="mob-accordion__title">Кровати</a>
+                        <!-- <a href="javascript:void(0)" class="mob-accordion__title mob-accordion__title_active">Матрасы</a> -->
+                        <div class="mob-accordion__content">
+                            <ul class="mob-accordion__list">
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Кровати</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Спальные гарнитуры</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Изголовья</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Основания</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Кровати-трансформеры</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /mob-accordion__item -->
+                    <div class="mob-accordion__item">
+                        <a href="javascript:void(0)" class="mob-accordion__title">Диваны</a>
+                        <!-- <a href="javascript:void(0)" class="mob-accordion__title mob-accordion__title_active">Матрасы</a> -->
+                        <div class="mob-accordion__content">
+                            <ul class="mob-accordion__list">
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Прямые диваны</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Угловые диваны</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Аксессуары к диванам</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /mob-accordion__item -->
+                    <div class="mob-accordion__item">
+                        <a href="javascript:void(0)" class="mob-accordion__title">Подушки и одеяла</a>
+                        <!-- <a href="javascript:void(0)" class="mob-accordion__title mob-accordion__title_active">Матрасы</a> -->
+                        <div class="mob-accordion__content">
+                            <ul class="mob-accordion__list">
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Подушки</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Одеяла</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Защитные чехлы для подушек</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /mob-accordion__item -->
+                    <div class="mob-accordion__item">
+                        <a href="javascript:void(0)" class="mob-accordion__title">Шкафы и комоды</a>
+                        <!-- <a href="javascript:void(0)" class="mob-accordion__title mob-accordion__title_active">Матрасы</a> -->
+                        <div class="mob-accordion__content">
+                            <ul class="mob-accordion__list">
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Распашные шкафы</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Шкафы-купе</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Комоды</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Угловые секции</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /mob-accordion__item -->
+                    <div class="mob-accordion__item">
+                        <a href="javascript:void(0)" class="mob-accordion__title">Малая мебель</a>
+                        <!-- <a href="javascript:void(0)" class="mob-accordion__title mob-accordion__title_active">Матрасы</a> -->
+                        <div class="mob-accordion__content">
+                            <ul class="mob-accordion__list">
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Тумбы</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Банкетки</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Пуфы</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Туалетные столики</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Вешкалки</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Зеркала</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /mob-accordion__item -->
+                    <div class="mob-accordion__item">
+                        <a href="javascript:void(0)" class="mob-accordion__title">Аксессуары</a>
+                        <!-- <a href="javascript:void(0)" class="mob-accordion__title mob-accordion__title_active">Аксессуары</a> -->
+                        <div class="mob-accordion__content">
+                            <ul class="mob-accordion__list">
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Постельное бельё</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Светильники</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Аромадиффузеры</a>
+                                </li>
+                                <li class="mob-accordion__list-item">
+                                    <a href="javascript:void(0)" class="mob-accordion__list-lnk">Массажёры</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /mob-accordion__item -->
+                    <div class="mob-accordion__item">
+                        <a href="javascript:void(0)" class="mob-accordion__title">Акции <span class="mob-accordion__sale-ico"></span></a>
+                    </div><!-- /mob-accordion__item -->
+                </div><!-- /mob-accordeon -->
+                <div class="mob-panel">
+                    <div class="mob-panel__login">
+                        <a href="javascript:void(0)" class="mob-panel__login-link">Войти в личный кабинет</a>
+                    </div>
+                    <ul class="mob-panel__list">
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link">Доставка и оплата</a>
+                        </li>
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link">Гарантия</a>
+                        </li>
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link">Энциклопедия</a>
+                        </li>
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link">Бонусная программа</a>
+                        </li>
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link">О компании</a>
+                        </li>
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link">Партнёрам</a>
+                        </li>
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link">Контакты</a>
+                        </li>
+                        <li class="mob-panel__item">
+                            <a href="javascript:void(0)" class="mob-panel__link mob-panel__link_services">Сервисы</a>
+                            <div class="header-drop mob-panel__header-drop">
+                              <ul class="header-drop__list">
+                                <li class="header-drop__item">
+                                  <a href="javascript:void(0)" class="header-drop__link">
+                                    Обмен и возврат
+                                  </a>
+                                </li>
+                                <li class="header-drop__item">
+                                  <a href="javascript:void(0)" class="header-drop__link">
+                                    Рассрочка и кредит
+                                  </a>
+                                </li>
+                                <li class="header-drop__item">
+                                  <a href="javascript:void(0)" class="header-drop__link">
+                                    Сроки изготовления
+                                  </a>
+                                </li>
+                                <li class="header-drop__item">
+                                  <a href="javascript:void(0)" class="header-drop__link">
+                                    Замер спального места
+                                  </a>
+                                </li>
+                                <li class="header-drop__item">
+                                  <a href="javascript:void(0)" class="header-drop__link">
+                                    Сборка мебели
+                                  </a>
+                                </li>
+                                <li class="header-drop__item">
+                                  <a href="javascript:void(0)" class="header-drop__link">
+                                    Дополнительные услгуи
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- /mob-panel -->
+            </div><!-- /mob-menu -->
+            <div class="search header-main__search">
+            <!-- <div class="search header-main__search search_show"> -->
+                <div class="search__form container">
+                    <form action="">
+                        <div class="search__choice">
+                            <a href="javascript:void(0)" class="search__choice-drop">Везде</a>
+                            <div class="header-drop header-drop_cat search__header-drop">
+                                <ul class="header-drop__list">
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            Везде
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            В каталоге
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            В акциях
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            В новостях
+                                        </a>
+                                    </li>
+                                    <li class="header-drop__item">
+                                        <a href="javascript:void(0)" class="header-drop__link">
+                                            В статьях
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="search__field">
+                            <input class="search__field-text" type="text" placeholder="Поиск товаров, например: мягкий матрас или угловой диван">
+                        </div>
+                        <button class="search-btn search-btn_close search__search-btn"></button>
+                        <button class="search-btn search__search-btn"></button>
+                    </form>
+                </div><!-- /search__form -->
+                <div class="search__results">
+                    <div class="search__results-inner container">
+                        <div class="search__results-found">
+                            <div class="search__results-cat">
+                                <div class="search__results-cat-name">
+                                    Модели
+                                </div>
+                                <div class="search__results-cat-items">
+                                    <a href="javascript:void(0)" class="search__results-cat-item">
+                                        Askona Balance Forma
+                                    </a>
+                                    <a href="javascript:void(0)" class="search__results-cat-item">
+                                        Askona Balance Smart
+                                    </a>
+                                </div>
+                            </div><!-- /search__results-cat -->
+                            <div class="search__results-cat">
+                                <div class="search__results-cat-name">
+                                    Категории
+                                </div>
+                                <div class="search__results-cat-items">
+                                    <a href="javascript:void(0)" class="search__results-cat-item">
+                                        Матрасы
+                                    </a>
+                                    <a href="javascript:void(0)" class="search__results-cat-item">
+                                        Беспружинные матрасы
+                                    </a>
+                                </div>
+                            </div><!-- /search__results-cat -->
+                            <div class="search__results-cat">
+                                <div class="search__results-cat-name">
+                                    Популярное
+                                </div>
+                                <div class="search__results-cat-items">
+                                    <a href="javascript:void(0)" class="search__results-cat-item">
+                                        Матрасы Аскона
+                                    </a>
+                                    <a href="javascript:void(0)" class="search__results-cat-item">
+                                        Наматрасники
+                                    </a>
+                                </div>
+                            </div><!-- /search__results-cat -->
+                            <div class="search__results-cat">
+                                <div class="search__results-cat-name">
+                                    Статьи
+                                </div>
+                                <div class="search__results-cat-items">
+                                    <a href="javascript:void(0)" class="search__results-cat-item">
+                                        Как выбрать матрас
+                                    </a>
+                                </div>
+                            </div><!-- /search__results-cat -->
+                        </div>
+                        <div class="search__results-often">
+                            <div class="search__results-often-search">
+                                Часто ищут
+                            </div>
+                            <div class="search__results-often-item">
+                                <img src="img/search/search-1.png" class="search__results-often-img" alt="">
+                                <div class="search__results-often-label">Матрас</div>
+                                <a href="javascript:void(0)" class="search__results-often-title">Askona Innovate</a>
+                            </div>
+                            <div class="search__results-often-item">
+                                <img src="img/search/search-2.png" class="search__results-often-img" alt="">
+                                <div class="search__results-often-label">Матрас</div>
+                                <a href="javascript:void(0)" class="search__results-often-title">Askona Innovate</a>
+                            </div>
+                            <div class="search__results-often-item">
+                                <img src="img/search/search-3.png" class="search__results-often-img" alt="">
+                                <div class="search__results-often-label">Матрас</div>
+                                <a href="javascript:void(0)" class="search__results-often-title">Askona Innovate</a>
+                            </div>
+                        </div><!-- /search__results-often -->
+                    </div>
+                </div>
+            </div> <!-- /search -->
+        </header>
+        <div class="popups">
+            <div class="popup popup_pass">
+                <div class="popup__close"></div>
+                <div class="popup__inner">
+                    <h2 class="popup__title">Восстановление<br> пароля</h2>
+                    <p class="popup__descr">
+                        Укажите адрес эл. почты, который вы использовали при регистрации, и инструкции для смены пароля будут высланы на этот адрес.
+                    </p>
+                    <form action="" method="POST" class="popup__form">
+                        <div class="field  popup__field popup__field_email">
+                            <input placeholder="E-mail" type="text" class="field__in">
+                            <label class="field__error">
+                                Укажите E-mail
+                            </label>
+                        </div>
+                        <button class="btn btn_big btn_lite popup__btn-right">Восстановить</button>
+                    </form>
+                </div><!-- /popup__inner -->
+            </div><!-- /popup -->
+            <div class="popup popup_reg">
+                <div class="popup__close"></div>
+                <div class="popup__inner">
+                    <h2 class="popup__title">Регистрация<br> пользователя</h2>
+                    <form action="" method="POST" class="popup__form">
+                        <div class="field popup__field">
+                            <div class="field__label">Имя</div>
+                            <input placeholder="" type="text" class="field__in">
+                            <label class="field__error">
+                                Укажите имя
+                            </label>
+                        </div>
+                        <div class="field  popup__field">
+                            <div class="field__label">Фамилия</div>
+                            <input placeholder="" type="text" class="field__in">
+                            <label class="field__error">
+                                Укажите Фамилию
+                            </label>
+                        </div>
+                        <div class="popup__field-double">
+                            <div class="field  popup__field popup__field_half">
+                                <div class="field__label">Телефон</div>
+                                <input placeholder="" type="text" class="field__in">
+                                <label class="field__error">
+                                    Телефон может состоять только из цифр
+                                </label>
+                            </div>
+                            <div class="field  popup__field popup__field_half popup__field_no-label">
+                                <input placeholder="E-mail" type="text" class="field__in">
+                                <label class="field__error">
+                                    Укажите E-mail
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field  popup__field">
+                            <input placeholder="Придумайте пароль" type="password" class="field__in">
+                            <label class="field__error">
+                                Укажите пароль
+                            </label>
+                        </div>
+                        <div class="field  popup__field">
+                            <input placeholder="Повторите пароль" type="password" class="field__in">
+                            <label class="field__error">
+                                Укажите пароль ещё раз
+                            </label>
+                        </div>
+                        <div class="popup__bottom">
+                            <div class="popup__subscribe">
+                                <div class="popup__subscribe-check">
+                                    <input type="checkbox" id="subscribe-check" name="">
+                                    <label for="subscribe-check">
+                                        Сообщать об акциях<br> и спецпредложениях
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn btn_big btn_lite popup__btn-reg">Зарегистрироваться</button>
+                        </div>
+                    </form>
+                </div><!-- /popup__inner -->
+            </div><!-- /popup -->
+            <div class="popup popup_login">
+                <div class="popup__close"></div>
+                <div class="popup__inner">
+                    <h2 class="popup__title">Вход в личный кабинет</h2>
+                    <form action="" method="POST" class="popup__form">
+                        <div class="field popup__field">
+                            <input  placeholder="E-mail" type="text" class="field__in">
+                            <span class="field__error">
+                                Укажите E-mail
+                            </span>
+                        </div>
+                        <div class="field  popup__field">
+                            <a href="javascript:void(0)" class="field__forgot">Забыли пароль?</a>
+                            <input  placeholder="Пароль" type="password" class="field__in">
+                            <span class="field__error">
+                                Укажите пароль
+                            </span>
+                        </div>
+                        <div class="popup__bottom">
+                            <a href="javascript:void()" class="popup__link-reg">Зарегистрироваться</a>
+                            <button class="btn btn_big btn_lite popup__btn-reg">Войти</button>
+                        </div>
+                    </form>
+                </div><!-- /popup__inner -->
+                <div class="popup__social-login">
+                    <div class="popup__bottom">
+                        <div class="popup__bottom-title">
+                            Войти через<br> соцсети
+                        </div>
+                        <div class="popup__social-icons">
+                            <a href="javascript:void(0)" class="social-icon social-icon_small social-icon_fb-small"></a>
+                            <a href="javascript:void(0)" class="social-icon social-icon_small social-icon_vk-small"></a>
+                            <a href="javascript:void(0)" class="social-icon social-icon_small social-icon_ok-small"></a>
+                            <a href="javascript:void(0)" class="social-icon social-icon_small social-icon_google-small"></a>
+                            <a href="javascript:void(0)" class="social-icon social-icon_small social-icon_twitter-small"></a>
+                        </div>
+                    </div><!-- /popup__bottom -->
+                </div><!-- /popup__social-login -->
+            </div><!-- /popup -->
+            <div class="popup popup_login">
+                <div class="popup__close"></div>
+                <div class="popup__inner">
+                    <h2 class="popup__title">Мы перезвоним<br> вам через 1 минуту</h2>
+                    <div class="popup__descr">
+                        Пожалуйста, заполните все поля<br> и ждите звонка
+                    </div>
+                    <form action="" method="POST" class="popup__form">
+                        <div class="field popup__field">
+                            <input  placeholder="Ваше имя" type="text" class="field__in">
+                            <span class="field__error">
+                                Укажите ваше имя
+                            </span>
+                        </div>
+                        <div class="field  popup__field">
+                            <input  placeholder="Номер телефона" type="text" class="field__in">
+                            <span class="field__error">
+                                Укажите номер телефона
+                            </span>
+                        </div>
+                        <button class="btn btn_big btn_lite popup__btn-right">Перезвоните мне</button>
+                    </form>
+                </div><!-- /popup__inner -->
+            </div><!-- /popup -->
+            <div class="popup popup_location">
+                <div class="popup__close popup__close_location"></div>
+                <div class="popup__center">
+                    <h2 class="popup__title popup__title_light">Выберите ваш город</h2>
+                    <div class="mini-form mini-form_search popup__mini-form">
+                        <form action="" method="POST" class="mini-form__form">
+                            <input placeholder="Введите название вашего города" type="text" class="mini-form__field">
+                            <button class="mini-form__btn mini-form__btn_search"></button>
+                        </form>
+                    </div><!-- /mini-form -->
+                    <div class="popup__city-small">
+                        <a href="javascript:void(0)" class="popup__city-item">Москва</a>
+                        <a href="javascript:void(0)" class="popup__city-item">Казань</a>
+                        <a href="javascript:void(0)" class="popup__city-item">Уфа</a>
+                        <a href="javascript:void(0)" class="popup__city-item">Санкт-Петербург</a>
+                        <a href="javascript:void(0)" class="popup__city-item">Самара</a>
+                        <a href="javascript:void(0)" class="popup__city-item">Красноярск</a>
+                        <a href="javascript:void(0)" class="popup__city-item">Новосибирск</a>
+                        <a href="javascript:void(0)" class="popup__city-item">Челябинск</a>
+                        <a href="javascript:void(0)" class="popup__city-item">Пермь</a>
+                        <a href="javascript:void(0)" class="popup__city-item">Екатеринбург</a>
+                        <a href="javascript:void(0)" class="popup__city-item">Омск</a>
+                        <a href="javascript:void(0)" class="popup__city-item">Волгоград</a>
+                        <a href="javascript:void(0)" class="popup__city-item">Нижний Новгород</a>
+                        <a href="javascript:void(0)" class="popup__city-item">Ростов-на-Дону</a>
+                        <a href="javascript:void(0)" class="popup__city-item">Воронеж</a>
+                    </div><!-- /popup__city-small -->
+                    <a href="javascript:void(0)" class="popup__city-full">Полный список городов</a>
+                    <div class="popup__city-big">
+                        <div class="popup__city-col">
+                            <div class="popup__city-row">
+                                <div class="popup__city-letter">a</div>
+                                <ul class="popup__city-list">
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Абакан</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Альметьевск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Ангарск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Архангельск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Ачинск</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /popup__city-row -->
+                            <div class="popup__city-row">
+                                <div class="popup__city-letter">б</div>
+                                <ul class="popup__city-list">
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Балашиха</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Барнаул</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Белгород</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Бердск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Бийск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Бузулук</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /popup__city-row -->
+                            <div class="popup__city-row">
+                                <div class="popup__city-letter">в</div>
+                                <ul class="popup__city-list">
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Владивосток</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Владимир</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Волгоград</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Волжский</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Воронеж</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Воскресенск</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /popup__city-row -->
+                        </div><!-- /popup__city-col -->
+                        <div class="popup__city-col">
+                            <div class="popup__city-row">
+                                <div class="popup__city-letter">к</div>
+                                <ul class="popup__city-list">
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Калининград</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Калуга</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Каменск-Уральский</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Кемерово</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Киров</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Комсомольск-на-Амуре</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Королев</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Красногорск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Краснодар</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Красноярск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Курган</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Курск</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /popup__city-row -->
+                            <div class="popup__city-row">
+                                <div class="popup__city-letter">л</div>
+                                <ul class="popup__city-list">
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Линево</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Липецк</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Люберцы</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /popup__city-row -->
+                            <div class="popup__city-row">
+                                <div class="popup__city-letter">м</div>
+                                <ul class="popup__city-list">
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Магнитогорск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Махачкала</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /popup__city-row -->
+                        </div><!-- /popup__city-col -->
+                        <div class="popup__city-col">
+                            <div class="popup__city-row">
+                                <div class="popup__city-letter">н</div>
+                                <ul class="popup__city-list">
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Набережные Челны</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Находка</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Нижневартовск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Нижний Новгород</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Нижний Тагил</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Новокузнецк</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Новороссийск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Новосибирск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Новотроицк</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Новочеркасск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Ногинск</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /popup__city-row -->
+                            <div class="popup__city-row">
+                                <div class="popup__city-letter">о</div>
+                                <ul class="popup__city-list">
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Обнинск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Одинцово</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Озерск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Омск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Оренбург</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Орел</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Орехово-Зуево</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Орск</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /popup__city-row -->
+                        </div><!-- /popup__city-col -->
+                        <div class="popup__city-col">
+                            <div class="popup__city-row">
+                                <div class="popup__city-letter">п</div>
+                                <ul class="popup__city-list">
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Пенза</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Первоуральск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Пермь</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Петрозаводск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Подольск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Прокопьевск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Псков</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /popup__city-row -->
+                            <div class="popup__city-row">
+                                <div class="popup__city-letter">р</div>
+                                <ul class="popup__city-list">
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Радужный</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Реутов</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Ростов-на-Дону</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Рязань</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /popup__city-row -->
+                            <div class="popup__city-row">
+                                <div class="popup__city-letter">с</div>
+                                <ul class="popup__city-list">
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Самара</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Санкт-Петербург</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Саранск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Саратов</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Северодвинск</a>
+                                    </li>
+                                    <li class="popup__city-elem">
+                                        <a href="javascript:void(0)" class="popup__city-item">Сосновый Бор</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /popup__city-row -->
+                        </div><!-- /popup__city-col -->
+                    </div>
+                </div><!-- /popup__center -->
+            </div><!-- /popup -->
+        </div><!-- /popups -->
+
+        <section class="banners">
+            <div class="banners__left">
+                <div class="main-slider banners__slider js_main-slider">
+                    <div class="main-slider__item">
+                        <div class="main-slider__item-content">
+                            <div class="main-slider__item-title">
+                                Новая коллекция <br>матрасов
+                            </div>
+                            <div class="main-slider__item-subtitle">
+                                Для здорового сна
+                            </div>
+                            <a href="javascript:void(0)" class="btn btn_big btn_ultra-lite main-slider__btn">Узнать больше</a>
+                        </div>
+                        <img class="main-slider__item-img" src="img/main/slider-pic.jpg" alt="">
+                    </div>
+                    <div class="main-slider__item">
+                        <div class="main-slider__item-content">
+                            <div class="main-slider__item-title">
+                                Мастер подбора<br> матраса из 5 шагов
+                            </div>
+                            <div class="main-slider__item-subtitle">
+                                Для здорового сна
+                            </div>
+                            <a href="javascript:void(0)" class="btn btn_big btn_ultra-lite main-slider__btn">Узнать больше</a>
+                        </div>
+                        <img class="main-slider__item-img" src="img/main/slider-pic.jpg" alt="">
+                    </div>
+                    <div class="main-slider__item">
+                        <div class="main-slider__item-content">
+                            <div class="main-slider__item-title">
+                                Новая коллекция <br>матрасов
+                            </div>
+                            <div class="main-slider__item-subtitle">
+                                Для здорового сна
+                            </div>
+                            <a href="javascript:void(0)" class="btn btn_big btn_ultra-lite main-slider__btn">Узнать больше</a>
+                        </div>
+                        <img class="main-slider__item-img" src="img/main/slider-pic.jpg" alt="">
+                    </div>
+                </div><!-- /main-slider -->
+                <div class="banners__small">
+                    <div class="banners__small-item">
+                        <div class="banners__small-inner">
+                            <h3 class="banners__small-title">
+                                Анатомический диван<br> за 3 дня
+                            </h3>
+                            <div class="sale-label banners__sale-label">
+                                -20%
+                            </div>
+                            <div class="sale-label sale-label_big  banners__sale-label-big">
+                                <div class="sale-label__descr">
+                                    только<br> до 16 октября
+                                </div>
+                                <div class="sale-label__price">
+                                    от 19 490 <span class="rub">f</span>
+                                </div>
+                                <div class="sale-label__price-stroke">
+                                    от 24 990 <span class="rub">f</span>
+                                </div>
+                            </div>
+                            <img src="img/main/small-banner-1.jpg" class="banners__small-img">
+                        </div><!-- /banners__small-inner -->
+                    </div>
+                    <div class="banners__small-item">
+                        <div class="banners__small-inner">
+                            <h3 class="banners__small-title">
+                                Кровать с подъёмным<br> механизмом Калифорния
+                            </h3>
+                            <div class="sale-label banners__sale-label">
+                                -20%
+                            </div>
+                            <div class="sale-label sale-label_big  banners__sale-label-big">
+                                <div class="sale-label__descr">
+                                    только<br> до 16 октября
+                                </div>
+                                <div class="sale-label__price">
+                                    от 19 490 <span class="rub">f</span>
+                                </div>
+                                <div class="sale-label__price-stroke">
+                                    от 24 990 <span class="rub">f</span>
+                                </div>
+                            </div>
+                            <img src="img/main/small-banner-2.jpg" class="banners__small-img">
+                        </div><!-- /banners__small-inner -->
+                    </div>
+                </div><!-- /banners__small -->
+                <div class="main-slider banners__slider js_main-slider">
+                    <div class="main-slider__item">
+                        <div class="main-slider__item-content">
+                            <div class="main-slider__item-subtitle main-slider__item-subtitle_top">
+                                Подобрать за минуту
+                            </div>
+                            <div class="main-slider__item-title">
+                                Мастер подбора <br>матраса из 5 шагов
+                            </div>
+                            <a href="javascript:void(0)" class="btn btn_big btn_ultra-lite main-slider__btn">Подобрать матрас</a>
+                        </div>
+                        <img class="main-slider__item-img main-slider__item-img_second" src="img/main/slider-pic-2.jpg" alt="">
+                    </div>
+                    <div class="main-slider__item">
+                        <div class="main-slider__item-content">
+                            <div class="main-slider__item-title">
+                                Новая коллекция <br>матрасов
+                            </div>
+                            <div class="main-slider__item-subtitle">
+                                Для здорового сна
+                            </div>
+                            <a href="javascript:void(0)" class="btn btn_big btn_ultra-lite main-slider__btn">Узнать больше</a>
+                        </div>
+                        <img class="main-slider__item-img main-slider__item-img_second" src="img/main/slider-pic-2.jpg" alt="">
+                    </div>
+                    <div class="main-slider__item">
+                        <div class="main-slider__item-content">
+                            <div class="main-slider__item-title">
+                                Новая коллекция <br>матрасов
+                            </div>
+                            <div class="main-slider__item-subtitle">
+                                Для здорового сна
+                            </div>
+                            <a href="javascript:void(0)" class="btn btn_big btn_ultra-lite main-slider__btn">Узнать больше</a>
+                        </div>
+                        <img class="main-slider__item-img main-slider__item-img_second" src="img/main/slider-pic-2.jpg" alt="">
+                    </div>
+                </div><!-- /main-slider -->
+            </div><!-- /banners__left -->
+            <div class="banners__right">
+                <img src="img/main/banners-right.jpg" class="banners__right-img">
+                <div class="banners__right-title">
+                    Как создать<br> идеальную<br> спальню
+                </div>
+                <a href="javascript:void(0)" class="btn btn_big btn_ultra-lite banners__btn">
+                    Подробнеее
+                </a>
+            </div><!-- banners__right -->
+            <div class="get-coupon">
+                <div class="get-coupon__inner">
+                    <h4 class="get-coupon__title">Клуб любителей здорового сна</h4>
+                    <div class="get-coupon__descr">
+                        Вступайте в клуб и получайте скидки<br class="get-coupon__br">
+                        и дополнительные привелегии
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn_lite get-coupon__btn">
+                        Получить скидку
+                    </a>
+                    <img src="img/main/get-coupon.png" alt="" class="get-coupon__img">
+                </div>
+            </div>
+        </section><!-- banners -->
+        <section class="week-products">
+            <div class="week-products__inner main-center">
+                <h2 class="main-title">Товары недели</h2>
+                <div class="sale-counter week-products__sale-counter">
+                    <div class="sale-counter__title">До конца акции осталось:</div>
+                    <div class="sale-counter__items">
+                        <div class="sale-counter__item">
+                            <span class="sale-counter__item-number">5</span>
+                            <span class="sale-counter__item-label">Дней</span>
+                        </div>
+                        <div class="sale-counter__item">
+                            <span class="sale-counter__item-number">7</span>
+                            <span class="sale-counter__item-label">Часов</span>
+                        </div>
+                        <div class="sale-counter__item">
+                            <span class="sale-counter__item-number">48</span>
+                            <span class="sale-counter__item-label">Минут</span>
+                        </div>
+                        <div class="sale-counter__item">
+                            <span class="sale-counter__item-number">35</span>
+                            <span class="sale-counter__item-label">Секунд</span>
+                        </div>
+                    </div><!-- /sale-counter__items -->
+                </div><!-- /sale-counter -->
+                <div class="week-products__items">
+                    <div class="week-products__item">
+                        <div class="sale-label week-products__sale-label">
+                            -30%
+                            <div class="sale-label__addition">
+                                Товар<br>недели
+                            </div>
+                        </div>
+                        <img src="img/main/week-products-1.jpg" alt="" class="week-products__item-img">
+                        <div class="week-products__item-label">Матрас</div>
+                        <h5 class="week-products__item-title">Askona Fortuna</h5>
+                        <div class="week-products__item-price">
+                            <div class="week-products__item-price-val">от 4 490 <span class="rub">f</span></div>
+                            <div class="week-products__item-price-stroke">от 7 139 <span class="rub">f</span></div>
+                        </div>
+                    </div><!-- /week-products__item -->
+                    <div class="week-products__item">
+                        <div class="sale-label week-products__sale-label">
+                            -30%
+                            <div class="sale-label__addition">
+                                Товар<br>недели
+                            </div>
+                        </div>
+                        <img src="img/main/week-products-1.jpg" alt="" class="week-products__item-img">
+                        <div class="week-products__item-label">Матрас</div>
+                        <h5 class="week-products__item-title">Askona Fortuna</h5>
+                        <div class="week-products__item-price">
+                            <div class="week-products__item-price-val">от 4 490 <span class="rub">f</span></div>
+                            <div class="week-products__item-price-stroke">от 7 139 <span class="rub">f</span></div>
+                        </div>
+                    </div><!-- /week-products__item -->
+                    <div class="week-products__item">
+                        <div class="sale-label week-products__sale-label">
+                            -30%
+                            <div class="sale-label__addition">
+                                Товар<br>недели
+                            </div>
+                        </div>
+                        <img src="img/main/week-products-1.jpg" alt="" class="week-products__item-img">
+                        <div class="week-products__item-label">Матрас</div>
+                        <h5 class="week-products__item-title">Askona Fortuna</h5>
+                        <div class="week-products__item-price">
+                            <div class="week-products__item-price-val">от 4 490 <span class="rub">f</span></div>
+                            <div class="week-products__item-price-stroke">от 7 139 <span class="rub">f</span></div>
+                        </div>
+                    </div><!-- /week-products__item -->
+                    <div class="week-products__item">
+                        <div class="sale-label week-products__sale-label">
+                            -30%
+                            <div class="sale-label__addition">
+                                Товар<br>недели
+                            </div>
+                        </div>
+                        <img src="img/main/week-products-1.jpg" alt="" class="week-products__item-img">
+                        <div class="week-products__item-label">Матрас</div>
+                        <h5 class="week-products__item-title">Askona Fortuna</h5>
+                        <div class="week-products__item-price">
+                            <div class="week-products__item-price-val">от 4 490 <span class="rub">f</span></div>
+                            <div class="week-products__item-price-stroke">от 7 139 <span class="rub">f</span></div>
+                        </div>
+                    </div><!-- /week-products__item -->
+                </div><!-- /week-products__items -->
+                <div class="week-products__btn">
+                    <a href="javascript:void(0);" class="btn btn_big btn_lite-chrome">Показать ещё</a>
+                </div>
+            </div><!-- /week-products__inner -->
+        </section><!-- /week-products -->
+        <section class="bestsellers">
+            <h2 class="main-title">Хиты продаж</h2>
+            <div class="main-tabs bestsellers__main-tabs">
+                <ul class="main-tabs__buttons">
+                    <li class="main-tabs__button main-tabs__button_active">Матрасы</li>
+                    <li class="main-tabs__button">Кровати</li>
+                    <li class="main-tabs__button">Диваны</li>
+                    <li class="main-tabs__button">Подушки</li>
+                    <li class="main-tabs__button">Аксессуары</li>
+                </ul>
+                <div class="main-tabs__content">
+                    <div class="bestseller">
+                        <div class="bestseller__items main-center">
+                            <div class="bestseller__item">
+                                <h3 class="bestseller__item-title">Матрасы</h3>
+                                <p class="bestseller__item-descr">Смотреть все матрасы</p>
+                                <div class="bestseller__item-overlay"></div>
+                                <img src="img/main/bestseller-1.jpg" alt="" class="bestseller__item-img bestseller__item-img-big">
+                            </div><!-- /bestseller__item -->
+                            <div class="bestseller__item">
+                                <a href="javascript:void()" class="btn btn_thin bestseller__item-btn">Универсальный</a>
+                                <p class="bestseller__item-label">Матрас</p>
+                                <a href="javascript:void(0)" class="bestseller__item-link">Askona Quadra</a>
+                                <p class="bestseller__item-price">от 17 710 <span class="rub">f</span></p>
+                                <img src="img/main/bestseller-5.jpg" alt="" class="bestseller__item-img">
+                            </div><!-- /bestseller__item -->
+                            <div class="bestseller__item">
+                                <h3 class="bestseller__item-title">Матрасы</h3>
+                                <p class="bestseller__item-descr">Смотреть все матрасы</p>
+                                <div class="bestseller__item-overlay"></div>
+                                <img src="img/main/bestseller-2.jpg" alt="" class="bestseller__item-img bestseller__item-img-big">
+                            </div><!-- /bestseller__item -->
+                            <div class="bestseller__item">
+                                <h3 class="bestseller__item-title bestseller__item-title_long">Маcтер<br> подбора<br> матраса</h3>
+                                <p class="bestseller__item-descr bestseller__item-descr_short">Из 5 шагов</p>
+                                <div class="bestseller__item-overlay bestseller__item-overlay_round"></div>
+                                <img src="img/main/bestseller-4.jpg" alt="" class="bestseller__item-img bestseller__item-img_round">
+                            </div><!-- /bestseller__item -->
+                            <div class="bestseller__item">
+                                <a href="javascript:void()" class="btn btn_thin bestseller__item-btn">Универсальный</a>
+                                <img src="img/main/bestseller-5.jpg" alt="" class="bestseller__item-img">
+                                <p class="bestseller__item-label">Матрас</p>
+                                <a href="javascript:void(0)" class="bestseller__item-link">Askona Quadra</a>
+                                <p class="bestseller__item-price bestseller__item-price_sale">от 17 710 <span class="rub">f</span></p>
+                                <p class="bestseller__item-price-stroke ">от 18 501 <span class="rub">f</span></p>
+                            </div><!-- /bestseller__item -->
+                            <div class="bestseller__item">
+                                <h3 class="bestseller__item-title">Наматрасники</h3>
+                                <p class="bestseller__item-descr">Смотреть все<br> наматрасники</p>
+                                <div class="bestseller__item-overlay"></div>
+                                <img src="img/main/bestseller-3.jpg" alt="" class="bestseller__item-img bestseller__item-img-big">
+                            </div><!-- /bestseller__item -->
+                            <div class="bestseller__item">
+                                <a href="javascript:void()" class="btn btn_thin bestseller__item-btn">Универсальный</a>
+                                <img src="img/main/bestseller-5.jpg" alt="" class="bestseller__item-img">
+                                <p class="bestseller__item-label">Матрас</p>
+                                <a href="javascript:void(0)" class="bestseller__item-link">Askona Quadra</a>
+                                <p class="bestseller__item-price bestseller__item-price_sale">от 17 710 <span class="rub">f</span></p>
+                                <p class="bestseller__item-price-stroke ">от 18 501 <span class="rub">f</span></p>
+                            </div><!-- /bestseller__item -->
+                            <div class="bestseller__item">
+                                <a href="javascript:void()" class="btn btn_thin bestseller__item-btn">Универсальный</a>
+                                <img src="img/main/bestseller-5.jpg" alt="" class="bestseller__item-img">
+                                <p class="bestseller__item-label">Матрас</p>
+                                <a href="javascript:void(0)" class="bestseller__item-link">Askona Quadra</a>
+                                <p class="bestseller__item-price">от 17 710 <span class="rub">f</span></p>
+                            </div><!-- /bestseller__item -->
+                        </div><!-- /bestseller__items -->
+                        <a href="javascript:void(0)" class="btn btn_big btn_lite-chrome bestseller__btn">Показать ещё</a>
+                    </div><!-- /bestseller -->
+                </div><!-- /main-tabs__content -->
+            </div><!-- /main-tabs -->
+        </section><!-- /bestsellers -->
+        <section class="promocode">
+            <p class="important-text promocode__important-text">
+                «Сэкономила 3 000 рублей на кровати с матрасом благодаря рассылке с промокодом»
+            </p>
+            <div class="promocode__customer">
+                <img src="img/main/promocode-userpic.jpg" alt="Людмила Сергеева" class="promocode__customer-pic">
+                <p class="promocode__customer-info">
+                    Людмила Сергеева,<br> г. Новосибирск
+                </p>
+            </div>
+            <h4 class="promocode__subscribe-title">Подписаться на рассылку<br> и получить промокод</h4>
+            <div class="promocode__subscribe">
+                <form action="" method="POST" class="promocode__subscribe-form">
+                    <input type="text" placeholder="Введите ваш e-mail" class="promocode__subscribe-email">
+                    <button class="promocode__subscribe-btn"></button>
+                </form>
+            </div>
+        </section><!-- /promocode -->
+        <section class="production">
+            <div class="production__inner main-center">
+                <div class="production__first">
+                    <h2 class="production__title">Производство</h2>
+                    <p class="production__descr">
+                        Два завода в России<br> оснащенные лучшим немецким<br> оборудованием
+                    </p>
+                </div>
+                <div class="production__second">
+                    <div class="production__second-item">
+                        <h3 class="production__subtitle">Технологии<br> и дизайн</h4>
+                    </div>
+                    <div class="production__second-item production__second-item_bottom">
+                        <h3 class="production__subtitle production__subtitle_hist">История<br> «Асконы»</h4>
+                        <p class="production__descr">26 лет на рынке</p>
+                    </div>
+                </div>
+                <div class="production__third">
+                    <h2 class="production__title production__title_light">Лаборатория сна</h2>
+                    <p class="production__descr production__descr_light">
+                        Единственная в России<br> лаборатория конроля<br> качества продукции
+                    </p>
+                </div>
+            </div><!-- /production__inner -->
+        </section><!-- /production -->
+        <section class="main-news">
+            <h2 class="main-title">Новости</h2>
+            <div class="main-tabs">
+                <ul class="main-tabs__buttons">
+                    <li class="main-tabs__button main-tabs__button_active">Все новости</li>
+                    <li class="main-tabs__button">Новости компании</li>
+                    <li class="main-tabs__button">Пресса о нас</li>
+                    <li class="main-tabs__button">Наши статьи</li>
+                </ul>
+                <div class="main-tabs__content">
+                    <div class="news-items container">
+                        <div class="news-items__inner">
+                            <div class="news-item">
+                                <div class="news-item__date">01 декабря 2016</div>
+                                <div class="news-item__content">
+                                    <div class="news-item__label">Новости компании</div>
+                                    <h5 class="news-item__title news-item__title_first">Открытия уходящего года</h5>
+                                    <p class="news-item__text">
+                                        Идеальное место для отдыха — то, где после тяжелого рабочего дня вас ждет удобная кровать...
+                                    </p>
+                                </div>
+                            </div><!-- /news-item -->
+                            <div class="news-item">
+                                <div class="news-item__info">
+                                    <div class="news-item__label news-item__label_light">Публикации</div>
+                                    <h5 class="news-item__title news-item__title_light">Как часто нужно менять<br> подушку</h5>
+                                </div>
+                                <img src="img/main/main-news-1.jpg" alt="" class="news-item__img">
+                            </div><!-- /news-item -->
+                            <div class="news-item">
+                                <img src="img/main/main-news-2.jpg" alt="" class="news-item__img news-item__img_round">
+                                <div class="news-item__label news-item__label_center">Статьи</div>
+                                <h5 class="news-item__title news-item__title_center">Как хорошо выспаться:<br> 5 полезных советов</h5>
+                            </div><!-- /news-item -->
+                            <div class="news-item">
+                                <div class="news-item__date news-item__date_light">01 декабря 2016</div>
+                                <div class="news-item__info">
+                                    <div class="news-item__label news-item__label_light">Пресса о нас</div>
+                                    <h5 class="news-item__title news-item__title_light">«Аскона» продает не<br> матрасы, а здоровый сон</h5>
+                                </div>
+                                <img src="img/main/main-news-3.jpg" alt="" class="news-item__img">
+                            </div><!-- /news-item -->
+                        </div><!-- /news-items__inner -->
+                        <div class="news-items__btn">
+                            <a href="javascript:void(0)" class="btn btn_big btn_lite-chrome">Показать ещё</a>
+                        </div>
+                    </div><!-- /news-items -->
+                </div><!-- /main-tabs__content -->
+            </div><!-- /main-tabs -->
+        </section><!-- /main-news -->
+        <section class="main-post container">
+            <h3 class="main-post__title">Ортопедические матрасы для здорового сна</h3>
+            <p class="main-post__content">
+                Фабрика «Аскона» является лидером в сфере производства товаров для сна на территории России и других стран Восточной Европы. Более 25 лет мы создаем исключительно качественную продукцию с помощью новых технологий и оборудования от ведущих европейских компаний. «Аскона» имеет огромные производственные мощности, расположенные на внушительной территории в 40 тыс. м². Трижды фабрика удостаивалась престижной отечественной награды «Марка № 1», которая говорит о целенаправленном и успешном развитии предприятия...
+                <span class="main-post__readmore">
+                    <a href="javascript:void(0)" class="main-post__readmore-lnk">Читать далее</a>
+                </span>
+            </p>
+        </section><!-- /main-post -->
+
+
+        <footer class="footer-main">
+            <div class="footer-main__inner container">
+                <div class="subscribe footer-main__subscribe">
+                    <div class="subscribe__title">
+                        <h3 class="subscribe__label">Подписаться на рассылку</h3>
+                        <p class="subscribe__descr">
+                            Скидки, новинки и полезные статьи<br> о сне раз в неделю
+                        </p>
+                    </div>
+                    <div class="subscribe__panel">
+                        <form action="" method="POST" class="subscribe__panel-form">
+                            <input type="text" placeholder="Введите ваш e-mail" class="subscribe__panel-field">
+                            <button class="subscribe__panel-btn"></button>
+                        </form>
+                    </div>
+                    <div class="subscribe__follow">
+                        <div class="subscribe__follow-label">Следите<br> за новостями</div>
+                        <div class="subscribe__social-icons">
+                            <a href="javascript:void(0)" class="social-icon social-icon_fb subscribe__social-icon"></a>
+                            <a href="javascript:void(0)" class="social-icon social-icon_vk subscribe__social-icon"></a>
+                            <a href="javascript:void(0)" class="social-icon social-icon_ok subscribe__social-icon"></a>
+                            <a href="javascript:void(0)" class="social-icon social-icon_insta subscribe__social-icon"></a>
+                            <a href="javascript:void(0)" class="social-icon social-icon_youtube subscribe__social-icon"></a>
+                        </div>
+                    </div>
+                </div><!-- /subscribe -->
+                <div class="bottom-menu">
+                    <div class="bottom-menu__columns">
+                        <div class="bottom-menu__col">
+                            <h5 class="bottom-menu__title">О здоровом сне</h5>
+                            <ul class="bottom-menu__list">
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Из чего состоит здоровье
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Сколько нужно спать
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Как улучшить свой сон
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Как обустроить спальню для здорового сна
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /bottom-menu__col -->
+                        <div class="bottom-menu__col">
+                            <h5 class="bottom-menu__title">Об «Асконе»</h5>
+                            <ul class="bottom-menu__list">
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Производство
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Дизайн и технологии
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Лаборатория сна
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        История компании
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Принципы и миссия
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Новости
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /bottom-menu__col -->
+                        <div class="bottom-menu__col">
+                            <h5 class="bottom-menu__title">Сервисы</h5>
+                            <ul class="bottom-menu__list">
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Где мой заказ
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Оплата и доставка
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Гарантия
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Обмен и возврат товара
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Рассрочка и кредит
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Акции и скидки
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Услуги
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Клуб любителей здорового сна
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /bottom-menu__col -->
+                        <div class="bottom-menu__col">
+                            <h5 class="bottom-menu__title">Ортопедические матрасы</h5>
+                            <ul class="bottom-menu__list">
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        С независимым пружинным блоком
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Беспружинные
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Детские
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Односпальные
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Двуспальные
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Тонкие
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Жесткие
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Кокосовые
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /bottom-menu__col -->
+                        <div class="bottom-menu__col">
+                            <h5 class="bottom-menu__title">Прочие товары</h5>
+                            <ul class="bottom-menu__list">
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Наматрасники
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Защитные чехлы
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Ортопедические подушки
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Кровати
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Одеяла
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Постельное белье
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Товары для спальни
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Диваны
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /bottom-menu__col -->
+                        <div class="bottom-menu__col">
+                            <h5 class="bottom-menu__title">Партнерам</h5>
+                            <ul class="bottom-menu__list">
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Предложение для отелей
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Франчайзинг от ХК Аскона
+                                    </a>
+                                </li>
+                            </ul>
+                            <h5 class="bottom-menu__title">Контакты</h5>
+                            <ul class="bottom-menu__list">
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Контакты подразделений
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Оптовые продажи
+                                    </a>
+                                </li>
+                                <li class="bottom-menu__item">
+                                    <a href="javascript:void(0)" class="bottom-menu__link">
+                                        Где купить
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /bottom-menu__col -->
+                    </div><!-- /bottom-menu__columns -->
+                </div><!-- /bottom-menu -->
+                <div class="footer-main__bottom">
+                    <div class="footer-main__copy">
+                        © 1990–2016. Компания «Аскона». Все права защищены.
+                    </div>
+                    <div class="footer-main__member-ico"></div>
+                    <div class="payment payment_big footer-main__payment">
+                        <span class="payment__item payment__item_big payment__item_master-big"></span>
+                        <span class="payment__item payment__item_big payment__item_visa-big"></span>
+                        <span class="payment__item payment__item_big payment__item_paypal-big"></span>
+                    </div>
+                    <div class="footer-main__brand-ico"></div>
+                    <div class="footer-main__powered-by">Сделано в <a href="javascript:void(0)" class="footer-main__powered-by-link">Greensight</a></div>
+                </div><!-- /footer-main__bottom -->
+            </div><!-- /footer-main__inner -->
+        </footer><!-- /footer-main -->
+    </div>
+
+    <script src="js/external.js" type="text/javascript"></script>
+    <script src="js/internal.js" type="text/javascript"></script>
+</body>
+</html>
