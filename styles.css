@@ -1,0 +1,196 @@
+/*** Начало сброса стилей ***/
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*** Конец сброса стилей ***/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.main_content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 1062px;
+}
+
+.header {
+    background-color: #fff;
+    border-top: 22px solid #fe0000;
+    border-left: 22px solid #fe0000;
+    border-right: 22px solid #fe0000;
+    border-bottom: 0px;
+}
+
+.header::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.header_left {
+    display: block;
+    float: left;
+    padding: 10px;
+    width: 420px;
+    text-align: center;
+}
+
+.portrait_pic {
+    width: 400px;
+}
+
+.info_block {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.info_block_title {
+    line-height: 50px;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #066690;
+}
+
+.info_block_link {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.info_block_link:hover {
+    color: #066690;
+}
+
+.header_right {
+    display: block;
+    float: right;
+    width: 590px;
+    min-height: 200px;
+}
+
+.card_title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 60px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.card_description {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.alert_block {
+    height: 112px;
+    display: block;
+    clear: both;
+    border-top: 10px solid #fe0000;
+    border-bottom: 10px solid #fe0000;
+    text-align: center;
+    line-height: 100px;
+    background-color: #fcbf04;
+    color: #fe0000;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.footer {
+    display: block;
+    clear: both;
+    box-sizing: border-box;
+    width: 100%;
+    height: 82px;
+    background-color: #fff;
+    border-right: 22px solid #fe0000;
+    border-left: 22px solid #fe0000;
+    border-bottom: 22px solid #fe0000;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 62px;
+}
