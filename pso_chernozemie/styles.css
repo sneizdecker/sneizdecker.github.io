@@ -1,0 +1,239 @@
+/*** Начало сброса стилей ***/
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*** Конец сброса стилей ***/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+.main_content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.header {
+    background-color: #fff;
+    border-top: 22px solid #fe0000;
+    border-left: 22px solid #fe0000;
+    border-right: 22px solid #fe0000;
+    border-bottom: 0px;
+    width: 100%;
+    font-size: 0px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+}
+
+.header::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.header_left {
+    display: block;
+    float: left;
+    padding: 1%;
+    width: 35%;
+    text-align: center;
+}
+
+.portrait_pic {
+    display: inline-block;
+    width: 100%;
+}
+
+.info_block {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
+    line-height: auto;
+}
+
+.info_block_title {
+    line-height: 1;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: #066690;
+}
+
+.info_block_link {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+}
+
+.info_block_link:hover {
+    color: #066690;
+}
+
+.header_right {
+    padding-left: 2%;
+    padding-right: 2%;
+    display: block;
+    float: right;
+    width: 65%;
+}
+
+.card_title {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    line-height: auto;
+    font-size: 3vw;
+    text-decoration: underline;
+}
+
+.card_description {
+    font-size: 2vw;
+    font-weight: bold;
+    line-height: auto;
+}
+
+.alert_block {
+    display: block;
+    clear: both;
+    border-top: 10px solid #fe0000;
+    border-bottom: 10px solid #fe0000;
+    text-align: center;
+    line-height: 1;
+    background-color: #fcbf04;
+    color: #fe0000;
+    font-size: 6vw;
+    text-transform: uppercase;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.footer {
+    display: block;
+    clear: both;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #fff;
+    border-right: 22px solid #fe0000;
+    border-left: 22px solid #fe0000;
+    border-bottom: 22px solid #fe0000;
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+}
+
+/* Медиа-запросы */
+
+@media only screen and (min-width: 3840px) {
+  .main_content {
+    width: 3840px;
+  } 
+
+  .card_title {
+    font-size: 120px
+  }
+
+  .card_description {
+    font-size: 80px;
+  }
+
+  .info_block {
+    font-size: 60px;
+  }
+
+  .info_block_title {
+    font-size: 120px;
+  }
+
+  .info_block_link {
+    font-size: 70px;
+  }
+
+  .alert_block {
+    font-size: 230px;
+  }
+
+  .footer {
+    font-size: 120px;
+  }
