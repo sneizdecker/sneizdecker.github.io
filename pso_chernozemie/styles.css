@@ -81,60 +81,72 @@ select {
 
 /*** Конец сброса стилей ***/
 
+html {
+  height: 100%;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1vw;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vh;
 }
 
 .main_content {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 100%;
+  width: 100%;
+  max-width: 3840px;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header {
-    background-color: #fff;
-    border-top: 22px solid #fe0000;
-    border-left: 22px solid #fe0000;
-    border-right: 22px solid #fe0000;
-    border-bottom: 0px;
-    width: 100%;
-    font-size: 0px;
-    letter-spacing: 0px;
-    word-spacing: 0px;
+  width: 100%;
+  height: 80%;
+  background-color: #fff;
+  border-top: 2vh solid #fe0000;
+  border-left: 2vh solid #fe0000;
+  border-right: 2vh solid #fe0000;
+  border-bottom: 0px;
+  font-size: 0px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
 }
 
-.header::after {
+/* .header::after {
     content: '';
     clear: both;
     display: block;
-}
+} */
 
 .header_left {
     display: block;
     float: left;
     padding: 1%;
     width: 35%;
+    height: 100%;
     text-align: center;
 }
 
 .portrait_pic {
-    display: inline-block;
-    width: 100%;
+  height: 80%;
+  width: auto;
+  display: inline-block;
+  object-fit: contain;
 }
 
 .info_block {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5vw;
-    line-height: auto;
+  height: 20%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3vh;
+  line-height: 1 !important;
 }
 
 .info_block_title {
     line-height: 1;
-    font-size: 3vw;
+    font-size: 5vh;
     text-transform: uppercase;
     color: #066690;
 }
@@ -142,7 +154,7 @@ body {
 .info_block_link {
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5vw;
+    font-size: 2.5vh;
 }
 
 .info_block_link:hover {
@@ -155,85 +167,52 @@ body {
     display: block;
     float: right;
     width: 65%;
+    height: 100%;
 }
 
 .card_title {
     margin-top: 1%;
     margin-bottom: 1%;
     line-height: auto;
-    font-size: 3vw;
+    font-size: 4.5vh;
     text-decoration: underline;
 }
 
 .card_description {
-    font-size: 2vw;
+    font-size: 3vh;
     font-weight: bold;
     line-height: auto;
 }
 
 .alert_block {
-    display: block;
-    clear: both;
-    border-top: 10px solid #fe0000;
-    border-bottom: 10px solid #fe0000;
-    text-align: center;
-    line-height: 1;
-    background-color: #fcbf04;
-    color: #fe0000;
-    font-size: 6vw;
-    text-transform: uppercase;
-    padding-top: 1%;
-    padding-bottom: 1%;
+  width: 100%;
+  height: 10%;
+  display: block;
+  clear: both;
+  border-top: 1vh solid #fe0000;
+  border-bottom: 1vh solid #fe0000;
+  text-align: center;
+  line-height: 1;
+  background-color: #fcbf04;
+  color: #fe0000;
+  font-size: 4vh;
+  text-transform: uppercase;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .footer {
-    display: block;
-    clear: both;
-    box-sizing: border-box;
-    width: 100%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    background-color: #fff;
-    border-right: 22px solid #fe0000;
-    border-left: 22px solid #fe0000;
-    border-bottom: 22px solid #fe0000;
-    font-size: 3vw;
-    font-weight: bold;
-    text-align: center;
-    line-height: 1;
+  width: 100%;
+  height: 10%;
+  display: block;
+  clear: both;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-right: 2vh solid #fe0000;
+  border-left: 2vh solid #fe0000;
+  border-bottom: 2vh solid #fe0000;
+  font-size: 3vh;
+  font-weight: bold;
+  text-align: center;
+  line-height: 8vh;
 }
-
-/* Медиа-запросы */
-
-@media only screen and (min-width: 3840px) {
-  .main_content {
-    width: 3840px;
-  } 
-
-  .card_title {
-    font-size: 120px
-  }
-
-  .card_description {
-    font-size: 80px;
-  }
-
-  .info_block {
-    font-size: 60px;
-  }
-
-  .info_block_title {
-    font-size: 120px;
-  }
-
-  .info_block_link {
-    font-size: 70px;
-  }
-
-  .alert_block {
-    font-size: 230px;
-  }
-
-  .footer {
-    font-size: 120px;
-  }
